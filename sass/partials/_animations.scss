@@ -71,3 +71,12 @@
     }
 }
 
+// Animation du logo react
+@keyframes react-fly {
+    from{
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
