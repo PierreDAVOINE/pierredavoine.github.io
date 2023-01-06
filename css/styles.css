@@ -71,6 +71,12 @@
     stroke-dashoffset: 0;
   }
 }
+#home {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
 #sky {
   height: 60vh;
   width: 100vw;
@@ -233,6 +239,7 @@
 @media screen and (min-width: 1100px) {
   #grid-titles h1 {
     font-size: 2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -287,19 +294,19 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 3.8499932082s light-glow-col infinite alternate;
+  animation: 15s ease 4.17568547s light-glow-col infinite alternate;
 }
 
 .anim-col2 {
-  animation: 17s ease 4.1193900002s light-glow-col infinite alternate;
+  animation: 17s ease 7.8593587494s light-glow-col infinite alternate;
 }
 
 .anim-col3 {
-  animation: 20s ease 6.7919229198s light-glow-col infinite alternate;
+  animation: 20s ease 1.9414879657s light-glow-col infinite alternate;
 }
 
 .anim-col4 {
-  animation: 19s ease 7.2457751382s light-glow-col infinite alternate;
+  animation: 19s ease 5.7484424991s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -307,11 +314,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 2.127411409s light-glow-col infinite alternate;
+  animation: 18s ease 1.2972526599s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 8.2336003352s light-glow-col infinite alternate;
+  animation: 16s ease 5.0141033511s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -319,11 +326,11 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 0.8869085763s light-glow-col infinite alternate;
+  animation: 20s ease 7.4793397035s light-glow-col infinite alternate;
 }
 
 .anim-col10 {
-  animation: 17s ease 4.2572620415s light-glow-col infinite alternate;
+  animation: 17s ease 2.4890414432s light-glow-col infinite alternate;
 }
 
 #lines {
@@ -341,29 +348,23 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 8.0173427681s light-glow-lin infinite alternate;
+  animation: 15s ease 2.8890007031s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 5.9852456285s light-glow-lin infinite alternate;
+  animation: 17s ease 5.8389708501s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 0.9905476701s light-glow-lin infinite alternate;
+  animation: 20s ease 0.5911953584s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 4.378017733s light-glow-lin infinite alternate;
+  animation: 19s ease 6.3127987576s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
   animation: 24s ease light-glow-lin infinite alternate;
-}
-
-#home {
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
