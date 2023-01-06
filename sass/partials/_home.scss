@@ -25,7 +25,8 @@
     left: calc(50% - ($size-mid-sun / 2));
     display: flex;
     justify-content: center;    
-    align-items: center;    
+    align-items: center;
+    animation: 10s wakeup-sun ;
 
     @media screen and (min-width: 1400px) {
         height: $size-big-sun;
@@ -49,7 +50,7 @@
     position: absolute;
     border-radius: 50px;
     background-color: beige;
-
+    animation: 10s wakeup-sun ;
     &.star1 {
         top: 10%;
         left: 10%;
@@ -111,7 +112,7 @@
     bottom: 0;
 	width: 100%;
 	height: 30%;
-    
+    animation: 10s wakeup-sun ;
     @media screen and (min-width: 1400px) {
         height: 45%;
     }
@@ -226,12 +227,24 @@
 
 .anim-col1 {
     animation: 15s ease random()*10s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 .anim-col2 {
     animation: 17s ease random()*10s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 .anim-col3 {
     animation: 20s ease random()*10s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 .anim-col4 {
     animation: 19s ease random()*10s light-glow-col infinite alternate;
@@ -247,12 +260,24 @@
 }
 .anim-col8 {
     animation: 22s ease 2s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 .anim-col9 {
     animation: 20s ease random()*10s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 .anim-col10 {
     animation: 17s ease random()*10s light-glow-col infinite alternate;
+    display: none;
+    @media screen and (min-width: 900px) {
+        display: block;
+    }
 }
 
 //*****LINES*****//

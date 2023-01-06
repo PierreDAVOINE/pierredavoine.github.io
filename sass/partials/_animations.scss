@@ -64,13 +64,6 @@
     }
 }
 
-// Animation de la signature
-@keyframes line {
-    100% {
-      stroke-dashoffset: 0;
-    }
-}
-
 // Animation du logo react
 @keyframes react-fly {
     from{
@@ -78,5 +71,26 @@
     }
     to {
         transform: translateY(5%);
+    }
+}
+
+//=======APARITIONS=====//
+
+// Apparition du soleil
+@keyframes wakeup-sun {
+    from {
+        transform: translateY(300%);
+    }
+    to {
+        transform: translateY(0);
+    }
+    
+}
+
+
+// Apparition de la signature
+@keyframes line {
+    100% {
+      stroke-dashoffset: 0;
     }
 }
