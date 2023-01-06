@@ -37,8 +37,11 @@
     img {
         width: 60%;
         filter: drop-shadow(-10px 5px 20px #000);
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         animation: 3s ease-in react-fly infinite alternate;
+        @media screen and (min-width: 900px) {
+            margin-bottom: 5rem;
+        }
     }
 }
 
@@ -133,7 +136,9 @@
     clip-path: polygon( 0% 100%,5% 95%,10% 85%,15% 87%,20% 80%,25% 78%,30% 65%,40% 70%,50% 57%,60% 53%,67% 68%,70% 70%,75% 66%,80% 55%,90% 50%,95% 60%,100% 57%,100% 100% ); 
 }
 
+//====================================//
 //==============GROUND================//
+//====================================//
 
 #grid {
     width: 100vw;
@@ -156,12 +161,12 @@
         color: white;
         font-family: "pixel";
         font-size: 2rem;
-        margin-top: 1rem;
-        line-height: 3rem;
+        line-height: 2.5rem;
         
         @media screen and (min-width : 1100px) {
             font-size: 2rem;
             margin-top: 3rem;
+            line-height: 3;
         }
     }
 
