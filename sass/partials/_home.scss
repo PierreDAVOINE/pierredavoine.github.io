@@ -28,10 +28,10 @@
     align-items: center;
     animation: 10s wakeup-sun ;
 
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 900px) {
         height: $size-big-sun;
         width: $size-big-sun;
-        top: 30%;
+        top: 15%;
         left: calc(50% - ($size-big-sun / 2));
     }
 
