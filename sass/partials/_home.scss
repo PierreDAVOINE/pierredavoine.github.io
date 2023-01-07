@@ -26,9 +26,9 @@
     display: flex;
     justify-content: center;    
     align-items: center;
-    animation: 10s wakeup-sun ;
+    // animation: 10s wakeup-sun ;
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1500px) {
         height: $size-big-sun;
         width: $size-big-sun;
         top: 30%;
@@ -40,7 +40,7 @@
         filter: drop-shadow(-10px 5px 20px #000);
         margin-bottom: 1rem;
         animation: 3s ease-in react-fly infinite alternate;
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 1400px) {
             margin-bottom: 5rem;
         }
     }
@@ -164,7 +164,7 @@
         font-size: 2rem;
         line-height: 2.5rem;
         
-        @media screen and (min-width : 1100px) {
+        @media screen and (min-width : 1400px) {
             font-size: 2rem;
             margin-top: 3rem;
             line-height: 3;
@@ -179,7 +179,7 @@
     display: block;
     margin: 0 auto;
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1400px) {
         width: 500px;
     }
 }
