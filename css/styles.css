@@ -105,9 +105,10 @@
 }
 #contact-bar a img {
   width: 100%;
+  transition: 0.3s ease;
 }
 #contact-bar a img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 #contact-bar a img:nth-child(1) {
@@ -340,7 +341,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 5.4428744378s light-glow-col infinite alternate;
+  animation: 15s ease 3.9711059471s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -350,7 +351,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 3.2333153608s light-glow-col infinite alternate;
+  animation: 17s ease 1.8704136861s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -360,7 +361,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 5.9279543966s light-glow-col infinite alternate;
+  animation: 20s ease 9.9353314133s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -370,7 +371,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 3.9998818293s light-glow-col infinite alternate;
+  animation: 19s ease 1.2439425543s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -378,11 +379,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 7.5130525666s light-glow-col infinite alternate;
+  animation: 18s ease 3.1358255292s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 8.444155752s light-glow-col infinite alternate;
+  animation: 16s ease 9.6865182803s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -396,7 +397,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 6.5759733452s light-glow-col infinite alternate;
+  animation: 20s ease 6.5497657691s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -406,7 +407,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 2.4988393429s light-glow-col infinite alternate;
+  animation: 17s ease 4.0055667504s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -430,19 +431,19 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 5.7826286083s light-glow-lin infinite alternate;
+  animation: 15s ease 0.7851404475s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 6.0874204659s light-glow-lin infinite alternate;
+  animation: 17s ease 9.7866164914s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 6.0727894709s light-glow-lin infinite alternate;
+  animation: 20s ease 0.4010518906s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 3.7825345835s light-glow-lin infinite alternate;
+  animation: 19s ease 5.7455939198s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
