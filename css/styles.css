@@ -93,6 +93,22 @@
   height: 100vh;
 }
 
+.title-section {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  background: none;
+  color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .flex-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 #contact-bar {
   animation: 5s ease-in fly alternate-reverse infinite;
   position: absolute;
@@ -341,7 +357,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 3.9711059471s light-glow-col infinite alternate;
+  animation: 15s ease 6.4550278966s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -351,7 +367,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 1.8704136861s light-glow-col infinite alternate;
+  animation: 17s ease 3.5748401513s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -361,7 +377,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 9.9353314133s light-glow-col infinite alternate;
+  animation: 20s ease 6.1117022059s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -371,7 +387,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 1.2439425543s light-glow-col infinite alternate;
+  animation: 19s ease 8.4178912907s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -379,11 +395,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 3.1358255292s light-glow-col infinite alternate;
+  animation: 18s ease 4.4701565026s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 9.6865182803s light-glow-col infinite alternate;
+  animation: 16s ease 8.6148510978s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -397,7 +413,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 6.5497657691s light-glow-col infinite alternate;
+  animation: 20s ease 8.5805092179s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -407,7 +423,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 4.0055667504s light-glow-col infinite alternate;
+  animation: 17s ease 3.0063485878s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -431,44 +447,90 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 0.7851404475s light-glow-lin infinite alternate;
+  animation: 15s ease 6.0054357681s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 9.7866164914s light-glow-lin infinite alternate;
+  animation: 17s ease 8.8204986768s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 0.4010518906s light-glow-lin infinite alternate;
+  animation: 20s ease 4.7392887445s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 5.7455939198s light-glow-lin infinite alternate;
+  animation: 19s ease 8.5616685152s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
   animation: 24s ease light-glow-lin infinite alternate;
 }
 
-#introduce {
+#skills {
+  height: 24vh;
+  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+}
+
+.skill-img {
+  width: 5%;
+  position: relative;
+}
+.skill-img::after {
+  content: " ";
+  width: 80px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.199);
+  box-shadow: 0px 0px 50px -4px #000000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 40px);
+  z-index: 10;
+}
+.skill-img img {
+  position: relative;
+  z-index: 11;
   width: 100%;
-  height: 30vh;
+  transition: 0.2s;
+}
+.skill-img img:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(11px 25px 38px #000);
+}
+
+#introduce {
+  padding-top: 3rem;
+  width: 100%;
+  height: 1000px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: black;
 }
-#introduce .title-section {
-  text-align: center;
-  font-size: 2rem;
-  background: none;
+
+#exp,
+#wrapper {
+  width: 40%;
+  height: 200px;
+  border: 1px solid white;
+}
+
+#wrapper {
+  display: flex;
 }
 
 .left-info {
-  width: 100px;
-  height: 70px;
+  background-color: blue;
+}
+
+.right-info {
+  background-color: violet;
+}
+
+#axe-wrap {
   border: 1px solid white;
+  width: 50px;
+  height: 100px;
+  position: relative;
+  left: -70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
