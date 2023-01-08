@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;    
     align-items: center;
-    animation: 5s wakeup-sun ;
+    animation: 17s wakeup-sun ;
 
     @media screen and (min-width: 900px) {
         height: $size-big-sun;
@@ -39,7 +39,7 @@
         width: 60%;
         filter: drop-shadow(-10px 5px 20px #000);
         margin-bottom: 1rem;
-        animation: 3s ease-in react-fly infinite alternate;
+        animation: 6s ease-in react-fly infinite alternate;
         @media screen and (min-width: 1400px) {
             margin-bottom: 5rem;
         }
