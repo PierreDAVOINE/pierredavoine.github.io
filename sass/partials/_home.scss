@@ -5,10 +5,18 @@
 #contact-bar {
     animation: 5s ease-in fly alternate-reverse infinite;
     position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 3%;
-    
+    top: 7%;
+    right: 3%;
+    width: 7%;
+
+    @media screen and (min-width: 600px) {
+        width: 5%;
+    }
+    @media screen and (min-width: 900px) {
+        width: 3%;
+        right: 2%;
+    }
+
     a {
         cursor: pointer;
         img {
