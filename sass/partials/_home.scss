@@ -1,5 +1,30 @@
 //==============SKY================//
 
+// contact bar
+
+#contact-bar {
+    animation: 5s ease-in fly alternate-reverse infinite;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 3%;
+    
+    a {
+        cursor: pointer;
+        img {
+            width: 100%;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            &:nth-child(1) {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+// sky
 #sky {
     height: 60vh;
     width: 100vw;
@@ -39,7 +64,7 @@
         width: 60%;
         filter: drop-shadow(-10px 5px 20px #000);
         margin-bottom: 1rem;
-        animation: 6s ease-in react-fly infinite alternate;
+        animation: 6s ease-in fly infinite alternate;
         @media screen and (min-width: 1400px) {
             margin-bottom: 5rem;
         }
