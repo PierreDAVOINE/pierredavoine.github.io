@@ -93,19 +93,12 @@
 }
 
 .title-section {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: none;
   color: white;
-}
-
-@media screen and (min-width: 500px) {
-  .flex-wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+  font-family: "pixel";
 }
 
 #contact-bar {
@@ -388,7 +381,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 7.1745925591s light-glow-col infinite alternate;
+  animation: 15s ease 1.3603989175s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -398,7 +391,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 0.9939411784s light-glow-col infinite alternate;
+  animation: 17s ease 2.6480130061s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -408,7 +401,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 2.0022009326s light-glow-col infinite alternate;
+  animation: 20s ease 2.3891124067s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -418,7 +411,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 2.8611750923s light-glow-col infinite alternate;
+  animation: 19s ease 8.6722783008s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -426,11 +419,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 6.8824759818s light-glow-col infinite alternate;
+  animation: 18s ease 3.6523665062s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 0.8314126715s light-glow-col infinite alternate;
+  animation: 16s ease 0.8002117016s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -444,7 +437,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 5.1831102437s light-glow-col infinite alternate;
+  animation: 20s ease 2.0309456218s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -454,7 +447,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 4.3172863649s light-glow-col infinite alternate;
+  animation: 17s ease 3.1309868559s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -478,19 +471,19 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 3.9031042761s light-glow-lin infinite alternate;
+  animation: 15s ease 1.7290090669s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 3.3518815803s light-glow-lin infinite alternate;
+  animation: 17s ease 0.5871343338s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 7.5554783945s light-glow-lin infinite alternate;
+  animation: 20s ease 5.880867936s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 7.98700422s light-glow-lin infinite alternate;
+  animation: 19s ease 0.5006531341s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
@@ -498,25 +491,13 @@
 }
 
 #skills {
-  height: 24vh;
   background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+  padding: 1.5rem 5px;
 }
 
 .skill-img {
-  width: 5%;
+  width: 20%;
   position: relative;
-}
-.skill-img::after {
-  content: " ";
-  width: 80px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.199);
-  box-shadow: 0px 0px 50px -4px #000000;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 40px);
-  z-index: 10;
 }
 .skill-img img {
   position: relative;

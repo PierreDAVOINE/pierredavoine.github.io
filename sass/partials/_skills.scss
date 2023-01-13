@@ -3,26 +3,21 @@
 //! Attention version mobile pas au point
 
 #skills {
-    height: 24vh;
+    // height: 24vh;
     background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgba(93,23,101,1) 30%, rgba(40,33,94,1) 92%, rgba(33,11,47,1) 100%);
+    padding: 1.5rem 5px;
+}
+
+
+#skill-wrap {
 
 }
 
+
 .skill-img {
-    width: 5%;
+    width: 20%;
     position: relative;
-    &::after {
-        content: " ";
-        width: 80px;
-        height: 20px;
-        background-color: rgba(0, 0, 0, 0.199);
-        box-shadow: 0px 0px 50px -4px #000000;
-        border-radius: 50%;
-        position: absolute;
-        bottom: -20px;
-        left: calc(50% - 80px/2);
-        z-index: 10;
-    }
+
     img {
         position: relative;
         z-index: 11;
