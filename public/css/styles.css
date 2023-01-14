@@ -89,26 +89,38 @@
 }
 #home {
   overflow: hidden;
-  width: 100vw;
   height: 100vh;
+}
+
+.title-section {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  background: none;
+  color: white;
+  font-family: "pixel";
 }
 
 #contact-bar {
   animation: 5s ease-in fly alternate-reverse infinite;
   position: absolute;
-  top: 7%;
-  right: 3%;
-  width: 7%;
+  top: 5%;
+  right: 5%;
+  width: 10%;
+}
+@media screen and (min-width: 600px) {
+  #contact-bar {
+    width: 8%;
+  }
 }
 @media screen and (min-width: 600px) {
   #contact-bar {
     width: 5%;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   #contact-bar {
-    width: 3%;
-    right: 2%;
+    width: 50px;
   }
 }
 #contact-bar a {
@@ -116,9 +128,10 @@
 }
 #contact-bar a img {
   width: 100%;
+  transition: 0.3s ease;
 }
 #contact-bar a img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 #contact-bar a img:nth-child(1) {
@@ -252,7 +265,7 @@
   position: absolute;
   width: 30%;
   height: 100%;
-  background-image: linear-gradient(#000 70%, #111 85%, rgba(255, 255, 255, 0.0666666667));
+  background-image: linear-gradient(#000 70%, #111 85%, rgba(17, 17, 17, 0.771));
 }
 @media screen and (min-width: 1400px) {
   .mountain {
@@ -280,31 +293,48 @@
 
 #grid-titles {
   position: absolute;
-  top: -75px;
+  top: -60px;
   z-index: 20;
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 600px) {
+  #grid-titles {
+    top: -75px;
+  }
 }
 #grid-titles h1 {
   text-align: center;
   color: white;
   font-family: "pixel";
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 500px) {
+  #grid-titles h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    line-height: 2;
+  }
 }
 @media screen and (min-width: 1400px) {
   #grid-titles h1 {
     font-size: 2rem;
-    margin-top: 3rem;
-    line-height: 3;
+    margin-top: 1rem;
   }
 }
 
 #sig {
-  width: 350px;
-  height: 150px;
+  width: 320px;
+  height: 120px;
   display: block;
   margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  #sig {
+    width: 400px;
+    height: 150px;
+  }
 }
 @media screen and (min-width: 1400px) {
   #sig {
@@ -351,7 +381,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 5.6556284472s light-glow-col infinite alternate;
+  animation: 15s ease 3.3749877503s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -361,7 +391,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 2.6288177837s light-glow-col infinite alternate;
+  animation: 17s ease 8.6956058618s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -371,7 +401,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 9.3720994336s light-glow-col infinite alternate;
+  animation: 20s ease 4.441119876s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -381,7 +411,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 6.8636646194s light-glow-col infinite alternate;
+  animation: 19s ease 7.1959686736s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -389,11 +419,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 3.3041743291s light-glow-col infinite alternate;
+  animation: 18s ease 7.3196532939s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 4.7810474374s light-glow-col infinite alternate;
+  animation: 16s ease 6.2382415611s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -407,7 +437,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 6.9303140606s light-glow-col infinite alternate;
+  animation: 20s ease 5.4715438078s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -417,7 +447,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 0.7806692473s light-glow-col infinite alternate;
+  animation: 17s ease 7.6374140076s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -441,23 +471,99 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 4.3128056921s light-glow-lin infinite alternate;
+  animation: 15s ease 1.8792029244s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 1.5188785479s light-glow-lin infinite alternate;
+  animation: 17s ease 7.1953130624s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 8.7509942499s light-glow-lin infinite alternate;
+  animation: 20s ease 0.1124211495s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 6.907286886s light-glow-lin infinite alternate;
+  animation: 19s ease 9.0330348074s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
   animation: 24s ease light-glow-lin infinite alternate;
+}
+
+#skills {
+  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+  padding: 0.5rem 2rem;
+}
+
+#skill-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+@media screen and (min-width: 900px) {
+  #skill-wrap {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+}
+
+.skill-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.skill-img img {
+  transition: 0.2s;
+  width: 40%;
+  filter: drop-shadow(-2px 1px 5px #000);
+}
+.skill-img img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(-2px 4px 9px #000);
+}
+@media screen and (min-width: 900px) {
+  .skill-img img {
+    width: 60%;
+  }
+}
+
+#introduce {
+  padding-top: 3rem;
+  width: 100%;
+  height: 1000px;
+  color: white;
+  background: black;
+}
+
+#exp,
+#wrapper {
+  width: 40%;
+  height: 200px;
+  border: 1px solid white;
+}
+
+#wrapper {
+  display: flex;
+}
+
+.left-info {
+  background-color: blue;
+}
+
+.right-info {
+  background-color: violet;
+}
+
+#axe-wrap {
+  border: 1px solid white;
+  width: 50px;
+  height: 100px;
+  position: relative;
+  left: -70px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,95 +2,97 @@
 
 // Animation des colonnes
 @keyframes light-glow-col {
-    0% {
-        border-right: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    25% {
-        border-right: 1px solid $bg-lines-light-glowr;
-        box-shadow: $bg-lines-light-glowr -10px 0px 45px -7px inset, $bg-lines-light-glowr 10px 0px 45px -7px;
-    }
-    50% {
-        border-right: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    70% {
-        border-right: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    75% {
-        border-right: 1px solid $bg-lines-light-glowb;
-        box-shadow: $bg-lines-light-glowb -10px 0px 45px -7px inset, $bg-lines-light-glowb 10px 0px 45px -7px;
-    }
-    80% {
-        border-right: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    100% {
-        border-right: 1px solid $bg-lines;
-        box-shadow: none;
-    }
+  0% {
+    border-right: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  25% {
+    border-right: 1px solid $bg-lines-light-glowr;
+    box-shadow: $bg-lines-light-glowr -10px 0px 45px -7px inset,
+      $bg-lines-light-glowr 10px 0px 45px -7px;
+  }
+  50% {
+    border-right: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  70% {
+    border-right: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  75% {
+    border-right: 1px solid $bg-lines-light-glowb;
+    box-shadow: $bg-lines-light-glowb -10px 0px 45px -7px inset,
+      $bg-lines-light-glowb 10px 0px 45px -7px;
+  }
+  80% {
+    border-right: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  100% {
+    border-right: 1px solid $bg-lines;
+    box-shadow: none;
+  }
 }
 
 // Animation des lignes
 @keyframes light-glow-lin {
-    0% {
-        border-top: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    25% {
-        border-top: 1px solid $bg-lines-light-glowb;
-        box-shadow: $bg-lines-light-glowb 0px 10px 45px -7px inset, $bg-lines-light-glowb 0px -15px 45px -7px;
-    }
-    50% {
-        border-top: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    70% {
-        border-top: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    75% {
-        border-top: 1px solid $bg-lines-light-glowr;
-        box-shadow: $bg-lines-light-glowr 0px 10px 45px -7px inset, $bg-lines-light-glowr 0px -15px 45px -7px;
-    }
-    80% {
-        border-top: 1px solid $bg-lines;
-        box-shadow: none;
-    }
-    100% {
-        border-top: 1px solid $bg-lines;
-        box-shadow: none;
-    }
+  0% {
+    border-top: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  25% {
+    border-top: 1px solid $bg-lines-light-glowb;
+    box-shadow: $bg-lines-light-glowb 0px 10px 45px -7px inset,
+      $bg-lines-light-glowb 0px -15px 45px -7px;
+  }
+  50% {
+    border-top: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  70% {
+    border-top: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  75% {
+    border-top: 1px solid $bg-lines-light-glowr;
+    box-shadow: $bg-lines-light-glowr 0px 10px 45px -7px inset,
+      $bg-lines-light-glowr 0px -15px 45px -7px;
+  }
+  80% {
+    border-top: 1px solid $bg-lines;
+    box-shadow: none;
+  }
+  100% {
+    border-top: 1px solid $bg-lines;
+    box-shadow: none;
+  }
 }
 
 // Animation du logo react
 @keyframes fly {
-    from{
-        transform: translateY(-5%);
-    }
-    to {
-        transform: translateY(5%);
-    }
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(5%);
+  }
 }
 
 //=======APARITIONS=====//
 
 // Apparition du soleil
 @keyframes wakeup-sun {
-    from {
-        transform: translateY(90%);
-    }
-    to {
-        transform: translateY(0);
-    }
-    
+  from {
+    transform: translateY(90%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-
 
 // Apparition de la signature
 @keyframes line {
-    100% {
-      stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }

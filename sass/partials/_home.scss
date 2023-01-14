@@ -3,171 +3,237 @@
 // contact bar
 
 #contact-bar {
-    animation: 5s ease-in fly alternate-reverse infinite;
-    position: absolute;
-    top: 7%;
-    right: 3%;
-    width: 7%;
+  animation: 5s ease-in fly alternate-reverse infinite;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 10%;
 
-    @media screen and (min-width: 600px) {
-        width: 5%;
-    }
-    @media screen and (min-width: 900px) {
-        width: 3%;
-        right: 2%;
-    }
+  @media screen and (min-width: 600px) {
+    width: 8%;
+  }
+  @media screen and (min-width: 600px) {
+    width: 5%;
+  }
+  @media screen and (min-width: 1100px) {
+    width: 50px;
+  }
 
-    a {
-        cursor: pointer;
-        img {
-            width: 100%;
-            &:hover {
-                transform: scale(1.2);
-                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-            }
-            &:nth-child(1) {
-                margin-bottom: 0.5rem;
-            }
-        }
+  a {
+    cursor: pointer;
+    img {
+      width: 100%;
+      transition: 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 10px 13px -7px #000000,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+      &:nth-child(1) {
+        margin-bottom: 0.5rem;
+      }
     }
+  }
 }
 
 // sky
 #sky {
-    height: 60vh;
-    width: 100vw;
-    position: relative;
-    z-index: -5;
-    background: rgb(29,6,38);
-    background: radial-gradient(circle, rgba(29,6,38,1) 0%, rgba(93,23,101,1) 30%, rgba(139,34,133,1) 60%, rgba(40,33,94,1) 92%, rgba(33,11,47,1) 100%);
-    
-    @media screen and (min-width: 1400px) {
-        background: radial-gradient(circle, rgba(29,6,38,1) 0%, rgba(93,23,101,1) 30%, rgba(139,34,133,1) 60%, rgba(40,33,94,1) 80%, rgba(33,11,47,1) 100%);
-    }
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  z-index: -5;
+  background: rgb(29, 6, 38);
+  background: radial-gradient(
+    circle,
+    rgba(29, 6, 38, 1) 0%,
+    rgba(93, 23, 101, 1) 30%,
+    rgba(139, 34, 133, 1) 60%,
+    rgba(40, 33, 94, 1) 92%,
+    rgba(33, 11, 47, 1) 100%
+  );
+
+  @media screen and (min-width: 1400px) {
+    background: radial-gradient(
+      circle,
+      rgba(29, 6, 38, 1) 0%,
+      rgba(93, 23, 101, 1) 30%,
+      rgba(139, 34, 133, 1) 60%,
+      rgba(40, 33, 94, 1) 80%,
+      rgba(33, 11, 47, 1) 100%
+    );
+  }
 }
 
 #sun {
-    background: linear-gradient(0deg, rgba(253,53,138,1) 0%, rgba(252,240,0,1) 100%);
-    box-shadow: -1px -2px 30px 3px rgba(250,105,25,0.75);
-    height: $size-mid-sun;
-    width: $size-mid-sun;
-    border-radius: 50%;
-    z-index: -2;
-    position: absolute;
-    top: 40%;
-    left: calc(50% - ($size-mid-sun / 2));
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    animation: 17s wakeup-sun ;
+  background: linear-gradient(
+    0deg,
+    rgba(253, 53, 138, 1) 0%,
+    rgba(252, 240, 0, 1) 100%
+  );
+  box-shadow: -1px -2px 30px 3px rgba(250, 105, 25, 0.75);
+  height: $size-mid-sun;
+  width: $size-mid-sun;
+  border-radius: 50%;
+  z-index: -2;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - ($size-mid-sun / 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 17s wakeup-sun;
 
-    @media screen and (min-width: 900px) {
-        height: $size-big-sun;
-        width: $size-big-sun;
-        top: 15%;
-        left: calc(50% - ($size-big-sun / 2));
-    }
+  @media screen and (min-width: 900px) {
+    height: $size-big-sun;
+    width: $size-big-sun;
+    top: 15%;
+    left: calc(50% - ($size-big-sun / 2));
+  }
 
-    img {
-        width: 60%;
-        filter: drop-shadow(-10px 5px 20px #000);
-        margin-bottom: 1rem;
-        animation: 6s ease-in fly infinite alternate;
-        @media screen and (min-width: 1400px) {
-            margin-bottom: 5rem;
-        }
+  img {
+    width: 60%;
+    filter: drop-shadow(-10px 5px 20px #000);
+    margin-bottom: 1rem;
+    animation: 6s ease-in fly infinite alternate;
+    @media screen and (min-width: 1400px) {
+      margin-bottom: 5rem;
     }
+  }
 }
 
 .stars {
-    position: absolute;
-    border-radius: 50px;
-    background-color: beige;
-    animation: 10s wakeup-sun ;
-    &.star1 {
-        top: 10%;
-        left: 10%;
-        width: 0.1rem;
-        height: 0.1rem;
-    }
-    &.star2 {
-        top: 30%;
-        left: 5%;
-        width: 0.3rem;
-        height: 0.3rem;
-    }
-    &.star3 {
-        top: 50%;
-        left: 13%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star4 {
-        top: 80%;
-        left: 5%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star5 {
-        top: 12%;
-        right: 8%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star6 {
-        top: 85%;
-        right: 16%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star7 {
-        top: 60%;
-        right: 10%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star8 {
-        top: 40%;
-        right: 13%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
-    &.star9 {
-        top: 50%;
-        right: 5%;
-        width: 0.2rem;
-        height: 0.2rem;
-    }
+  position: absolute;
+  border-radius: 50px;
+  background-color: beige;
+  animation: 10s wakeup-sun;
+  &.star1 {
+    top: 10%;
+    left: 10%;
+    width: 0.1rem;
+    height: 0.1rem;
+  }
+  &.star2 {
+    top: 30%;
+    left: 5%;
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+  &.star3 {
+    top: 50%;
+    left: 13%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star4 {
+    top: 80%;
+    left: 5%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star5 {
+    top: 12%;
+    right: 8%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star6 {
+    top: 85%;
+    right: 16%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star7 {
+    top: 60%;
+    right: 10%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star8 {
+    top: 40%;
+    right: 13%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+  &.star9 {
+    top: 50%;
+    right: 5%;
+    width: 0.2rem;
+    height: 0.2rem;
+  }
 }
 
 #mountains-container {
-    position: absolute;
-    bottom: 0;
-	width: 100%;
-	height: 30%;
-    animation: 10s wakeup-sun ;
-    @media screen and (min-width: 1400px) {
-        height: 45%;
-    }
-}
-.mountain {
-	position: absolute;
-	width: 30%;
-	height: 100%;
-	background-image: linear-gradient( #000 70%, #111 85%, #fff1 );
-    
-    @media screen and (min-width: 1400px) {
-        width: 40%;
-    }
-}
-#mountain-left {
-    left: 0;
-    clip-path: polygon( 0% 100%,0% 55%,5% 60%,10% 55%,20% 50%,25% 42%,30% 38%,33% 35%,40% 45%,50% 50%,60% 70%,70% 85%,75% 82%,80% 91%,85% 90%,90% 95%,95% 98%,100% 100% ); 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  animation: 10s wakeup-sun;
+  @media screen and (min-width: 1400px) {
+    height: 45%;
+  }
 }
 
-#mountain-right { 
-    right: 0;
-    clip-path: polygon( 0% 100%,5% 95%,10% 85%,15% 87%,20% 80%,25% 78%,30% 65%,40% 70%,50% 57%,60% 53%,67% 68%,70% 70%,75% 66%,80% 55%,90% 50%,95% 60%,100% 57%,100% 100% ); 
+.mountain {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-image: linear-gradient(
+    #000 70%,
+    #111 85%,
+    rgba(17, 17, 17, 0.771)
+  );
+
+  @media screen and (min-width: 1400px) {
+    width: 40%;
+  }
+}
+
+#mountain-left {
+  left: 0;
+  clip-path: polygon(
+    0% 100%,
+    0% 55%,
+    5% 60%,
+    10% 55%,
+    20% 50%,
+    25% 42%,
+    30% 38%,
+    33% 35%,
+    40% 45%,
+    50% 50%,
+    60% 70%,
+    70% 85%,
+    75% 82%,
+    80% 91%,
+    85% 90%,
+    90% 95%,
+    95% 98%,
+    100% 100%
+  );
+}
+
+#mountain-right {
+  right: 0;
+  clip-path: polygon(
+    0% 100%,
+    5% 95%,
+    10% 85%,
+    15% 87%,
+    20% 80%,
+    25% 78%,
+    30% 65%,
+    40% 70%,
+    50% 57%,
+    60% 53%,
+    67% 68%,
+    70% 70%,
+    75% 66%,
+    80% 55%,
+    90% 50%,
+    95% 60%,
+    100% 57%,
+    100% 100%
+  );
 }
 
 //====================================//
@@ -175,173 +241,188 @@
 //====================================//
 
 #grid {
-    width: 100vw;
-    height: 40vh;
-    background: black;
-    position: relative;
-    perspective: 1000px;
+  width: 100vw;
+  height: 40vh;
+  background: black;
+  position: relative;
+  perspective: 1000px;
 }
 
 //*****TITLES*****//
 #grid-titles {
-    position: absolute;
-    top: -75px; //-22%
-    z-index: 20;
-    width: 100%;
-    padding: 0 0.5rem;
+  position: absolute;
+  top: -60px;
+  z-index: 20;
+  width: 100%;
+  padding: 0 1rem;
 
-    h1 {
-        text-align: center;
-        color: white;
-        font-family: "pixel";
-        font-size: 2rem;
-        line-height: 2.5rem;
-        
-        @media screen and (min-width : 1400px) {
-            font-size: 2rem;
-            margin-top: 3rem;
-            line-height: 3;
-        }
+  @media screen and (min-width: 600px) {
+    top: -75px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: "pixel";
+    font-size: 1.1rem;
+    line-height: 2rem;
+
+    @media screen and (min-width: 500px) {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      line-height: 2;
     }
-
+    @media screen and (min-width: 1400px) {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
 }
 
 #sig {
-    width: 350px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
+  width: 320px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
 
-    @media screen and (min-width: 1400px) {
-        width: 500px;
-    }
+  @media screen and (min-width: 600px) {
+    width: 400px;
+    height: 150px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 500px;
+  }
 }
 
 .sig__path {
-    fill-rule: evenodd;
-    clip-rule: evenodd;
-    fill: none;
-    stroke: #fff;
-    stroke-width: 5;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    .animated & {
-        opacity: 1;
-        animation-name: line;
-    }
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  .animated & {
+    opacity: 1;
+    animation-name: line;
+  }
 }
 
 #shadow {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 //*****COLUMNS*****//
 
 #columns {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transform-origin: top center;
-    transform: rotateX(65deg);
-    
-    .column {
-        border-right: 1px solid $bg-lines;
-        width: 10%;
-        height: 200%;
-    }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform-origin: top center;
+  transform: rotateX(65deg);
+
+  .column {
+    border-right: 1px solid $bg-lines;
+    width: 10%;
+    height: 200%;
+  }
 }
 
 .anim-col1 {
-    animation: 15s ease random()*10s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 15s ease random() * 10s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 .anim-col2 {
-    animation: 17s ease random()*10s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 17s ease random() * 10s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 .anim-col3 {
-    animation: 20s ease random()*10s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 20s ease random() * 10s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 .anim-col4 {
-    animation: 19s ease random()*10s light-glow-col infinite alternate;
+  animation: 19s ease random() * 10s light-glow-col infinite alternate;
 }
 .anim-col5 {
-    animation: 24s ease light-glow-col infinite alternate;
+  animation: 24s ease light-glow-col infinite alternate;
 }
 .anim-col6 {
-    animation: 18s ease random()*10s light-glow-col infinite alternate;
+  animation: 18s ease random() * 10s light-glow-col infinite alternate;
 }
 .anim-col7 {
-    animation: 16s ease random()*10s light-glow-col infinite alternate;
+  animation: 16s ease random() * 10s light-glow-col infinite alternate;
 }
 .anim-col8 {
-    animation: 22s ease 2s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 22s ease 2s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 .anim-col9 {
-    animation: 20s ease random()*10s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 20s ease random() * 10s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 .anim-col10 {
-    animation: 17s ease random()*10s light-glow-col infinite alternate;
-    display: none;
-    @media screen and (min-width: 900px) {
-        display: block;
-    }
+  animation: 17s ease random() * 10s light-glow-col infinite alternate;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
 }
 
 //*****LINES*****//
 
 #lines {
-    position: absolute;
-    top: 0;
-    width: 95%;
-    height: 100%;
-    transform-origin: top;
-    transform: rotateX(60deg);
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 100%;
+  transform-origin: top;
+  transform: rotateX(60deg);
 
-    .line {
-        width: 100%;
-        height: 25%;
-        margin: 0 auto;
-    }
+  .line {
+    width: 100%;
+    height: 25%;
+    margin: 0 auto;
+  }
 }
 
 .anim-lin1 {
-    animation: 15s ease random()*10s light-glow-lin infinite alternate;
+  animation: 15s ease random() * 10s light-glow-lin infinite alternate;
 }
 .anim-lin2 {
-    animation: 17s ease random()*10s light-glow-lin infinite alternate;
+  animation: 17s ease random() * 10s light-glow-lin infinite alternate;
 }
 .anim-lin3 {
-    animation: 20s ease random()*10s light-glow-lin infinite alternate;
+  animation: 20s ease random() * 10s light-glow-lin infinite alternate;
 }
 .anim-lin4 {
-    animation: 19s ease random()*10s light-glow-lin infinite alternate;
+  animation: 19s ease random() * 10s light-glow-lin infinite alternate;
 }
 .anim-lin5 {
-    animation: 24s ease light-glow-lin infinite alternate;
+  animation: 24s ease light-glow-lin infinite alternate;
 }

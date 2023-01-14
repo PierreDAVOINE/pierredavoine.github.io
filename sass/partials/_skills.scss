@@ -1,0 +1,45 @@
+// Compétences
+
+#skills {
+  background: radial-gradient(
+    circle,
+    rgb(75, 19, 97) 0%,
+    rgba(93, 23, 101, 1) 30%,
+    rgba(40, 33, 94, 1) 92%,
+    rgba(33, 11, 47, 1) 100%
+  );
+  padding: 0.5rem 2rem;
+}
+
+#skill-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+
+  @media screen and (min-width: 900px) {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+}
+
+.skill-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  img {
+    transition: 0.2s;
+    width: 40%;
+    filter: drop-shadow(-2px 1px 5px #000);
+    &:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(-2px 4px 9px #000);
+    }
+    @media screen and (min-width: 900px) {
+      width: 60%;
+    }
+  }
+}

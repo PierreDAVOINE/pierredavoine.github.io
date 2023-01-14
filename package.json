@@ -1,6 +1,30 @@
 {
+  "name": "pierredavoine.github.io",
+  "version": "1.0.0",
+  "description": "Mon portfolio herbégé sur la github page.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierreDAVOINE/pierredavoine.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "html",
+    "js",
+    "css",
+    "cv",
+    "projet"
+  ],
+  "author": "Pierre DAVOINE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PierreDAVOINE/pierredavoine.github.io/issues"
+  },
+  "homepage": "https://github.com/PierreDAVOINE/pierredavoine.github.io#readme",
   "dependencies": {
-    "aos": "^2.3.4",
     "sass": "^1.57.1"
   }
 }
