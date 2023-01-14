@@ -314,7 +314,7 @@
   #grid-titles h1 {
     font-size: 1.5rem;
     margin-top: 0.5rem;
-    line-height: 2.5;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -381,7 +381,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 1.3603989175s light-glow-col infinite alternate;
+  animation: 15s ease 5.5739176916s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -391,7 +391,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 2.6480130061s light-glow-col infinite alternate;
+  animation: 17s ease 4.2659321206s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -401,7 +401,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 2.3891124067s light-glow-col infinite alternate;
+  animation: 20s ease 0.0561229542s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -411,7 +411,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 8.6722783008s light-glow-col infinite alternate;
+  animation: 19s ease 6.0323600698s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -419,11 +419,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 3.6523665062s light-glow-col infinite alternate;
+  animation: 18s ease 9.6536834615s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 0.8002117016s light-glow-col infinite alternate;
+  animation: 16s ease 5.3303369455s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -437,7 +437,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 2.0309456218s light-glow-col infinite alternate;
+  animation: 20s ease 8.6458761028s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -447,7 +447,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 3.1309868559s light-glow-col infinite alternate;
+  animation: 17s ease 8.7580951189s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -471,19 +471,19 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 1.7290090669s light-glow-lin infinite alternate;
+  animation: 15s ease 1.7782612929s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 0.5871343338s light-glow-lin infinite alternate;
+  animation: 17s ease 9.085183902s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 5.880867936s light-glow-lin infinite alternate;
+  animation: 20s ease 5.8438083759s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 0.5006531341s light-glow-lin infinite alternate;
+  animation: 19s ease 7.0109043053s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
@@ -492,22 +492,43 @@
 
 #skills {
   background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
-  padding: 1.5rem 5px;
+  padding: 0.5rem 2rem;
+}
+
+#skill-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+@media screen and (min-width: 900px) {
+  #skill-wrap {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
 }
 
 .skill-img {
-  width: 20%;
-  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
 }
 .skill-img img {
-  position: relative;
-  z-index: 11;
-  width: 100%;
   transition: 0.2s;
+  width: 40%;
+  filter: drop-shadow(-2px 1px 5px #000);
 }
 .skill-img img:hover {
-  transform: scale(1.3);
-  filter: drop-shadow(11px 25px 38px #000);
+  transform: scale(1.1);
+  filter: drop-shadow(-2px 4px 9px #000);
+}
+@media screen and (min-width: 900px) {
+  .skill-img img {
+    width: 60%;
+  }
 }
 
 #introduce {
