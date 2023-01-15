@@ -10,6 +10,9 @@ document
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const text = document.getElementById("text");
     const serviceID = "service_2td5673";
     const templateID = "template_1lhxo8v";
 
@@ -20,6 +23,9 @@ document
         alert(
           "Votre message à bien été envoyé ! Je vous répondrais au plus vite."
         );
+        name.value = "";
+        email.value = "";
+        text.value = "";
       },
       (error) => {
         console.log("FAILED...", error);
