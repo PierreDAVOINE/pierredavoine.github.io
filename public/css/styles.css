@@ -101,6 +101,10 @@
   font-family: "pixel";
 }
 
+.bg-page {
+  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+}
+
 #contact-bar {
   animation: 5s ease-in fly alternate-reverse infinite;
   position: absolute;
@@ -381,7 +385,7 @@
 }
 
 .anim-col1 {
-  animation: 15s ease 6.5438246928s light-glow-col infinite alternate;
+  animation: 15s ease 8.4245727566s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -391,7 +395,7 @@
 }
 
 .anim-col2 {
-  animation: 17s ease 4.579575635s light-glow-col infinite alternate;
+  animation: 17s ease 9.3745636129s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -401,7 +405,7 @@
 }
 
 .anim-col3 {
-  animation: 20s ease 4.4952128288s light-glow-col infinite alternate;
+  animation: 20s ease 4.1924641927s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -411,7 +415,7 @@
 }
 
 .anim-col4 {
-  animation: 19s ease 8.4788672998s light-glow-col infinite alternate;
+  animation: 19s ease 9.5997074312s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -419,11 +423,11 @@
 }
 
 .anim-col6 {
-  animation: 18s ease 3.4796842088s light-glow-col infinite alternate;
+  animation: 18s ease 1.0733141542s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 6.6794015977s light-glow-col infinite alternate;
+  animation: 16s ease 3.6058031995s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -437,7 +441,7 @@
 }
 
 .anim-col9 {
-  animation: 20s ease 6.3025101044s light-glow-col infinite alternate;
+  animation: 20s ease 6.7254165874s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -447,7 +451,7 @@
 }
 
 .anim-col10 {
-  animation: 17s ease 5.6758844152s light-glow-col infinite alternate;
+  animation: 17s ease 8.6097842701s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -471,19 +475,19 @@
 }
 
 .anim-lin1 {
-  animation: 15s ease 7.07843761s light-glow-lin infinite alternate;
+  animation: 15s ease 1.5671173233s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 5.1918579748s light-glow-lin infinite alternate;
+  animation: 17s ease 9.4754386996s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 9.3648161135s light-glow-lin infinite alternate;
+  animation: 20s ease 0.637790305s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 5.632833907s light-glow-lin infinite alternate;
+  animation: 19s ease 9.0881195877s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
@@ -491,7 +495,6 @@
 }
 
 #skills {
-  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
   padding: 0.5rem 2rem;
 }
 
@@ -567,47 +570,96 @@
 }
 
 #contact {
-  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
-  padding: 2rem;
   color: white;
+  padding: 2rem;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   #contact {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
   }
 }
 
 #contact-title,
 #contact-form {
-  width: 50%;
+  margin: auto;
+  width: 98%;
+}
+@media screen and (min-width: 1000px) {
+  #contact-title,
+#contact-form {
+    margin: 0;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  #contact-title,
+#contact-form {
+    width: 30%;
+  }
 }
 
+#contact-title {
+  margin-bottom: 2rem;
+  font-family: "arial";
+}
 #contact-title h2 {
-  font-style: 2rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
+}
+#contact-title h2 a {
+  color: white;
+}
+#contact-title p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#contact-title .social-link img {
+  width: 10%;
 }
 
 #contact-img {
-  width: 30%;
+  width: 50%;
+  margin: auto;
+}
+@media screen and (min-width: 1080px) {
+  #contact-img {
+    width: 310px;
+    margin: 0;
+  }
 }
 
 #contact-img img {
   width: 100%;
   display: block;
-  border: 1px solid white;
+  margin-bottom: 2rem;
 }
 
 #contact-form {
   display: flex;
   flex-direction: column;
 }
+#contact-form input,
+#contact-form textarea {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
 #contact-form input {
   margin-bottom: 1rem;
   height: 2.5rem;
+}
+#contact-form textarea {
+  margin-bottom: 1rem;
+}
+#contact-form button {
+  width: 20%;
+  padding: 0.5rem;
+  align-self: flex-end;
+  min-width: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */

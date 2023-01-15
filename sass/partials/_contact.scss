@@ -1,55 +1,104 @@
 // Contact
 
+//=========GENERAL===========
+
 #contact {
-  //   background: black;
-  background: radial-gradient(
-    circle,
-    rgb(75, 19, 97) 0%,
-    rgba(93, 23, 101, 1) 30%,
-    rgba(40, 33, 94, 1) 92%,
-    rgba(33, 11, 47, 1) 100%
-  );
-  padding: 2rem;
   color: white;
-  @media screen and (min-width: 700px) {
+  padding: 2rem;
+
+  @media screen and (min-width: 1000px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
   }
 }
 
 #contact-title,
 #contact-form {
-  width: 50%;
-}
+  margin: auto;
+  width: 98%;
 
-#contact-title {
-  h2 {
-    font-style: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  @media screen and (min-width: 1000px) {
+    margin: 0;
+    width: 50%;
+  }
+  @media screen and (min-width: 1320px) {
+    width: 30%;
   }
 }
 
+//=========TITLE===========
+
+#contact-title {
+  margin-bottom: 2rem;
+  font-family: "arial";
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-link {
+    img {
+      width: 10%;
+    }
+  }
+}
+
+//=========IMAGE===========
+
 #contact-img {
-  width: 30%;
+  width: 50%;
+  margin: auto;
+  @media screen and (min-width: 1080px) {
+    width: 310px;
+    margin: 0;
+  }
 }
 
 #contact-img img {
   width: 100%;
   display: block;
-  border: 1px solid white;
-  //   margin: auto;
+  // border: 1px solid white;
+  margin-bottom: 2rem;
 }
+
+//=========FORM===========
 
 #contact-form {
   display: flex;
   flex-direction: column;
 
+  input,
+  textarea {
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
   input {
     margin-bottom: 1rem;
     height: 2.5rem;
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 20%;
+    padding: 0.5rem;
+    align-self: flex-end;
+    min-width: 70px;
   }
 }
 
