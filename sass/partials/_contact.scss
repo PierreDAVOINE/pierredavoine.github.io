@@ -1,0 +1,109 @@
+// Contact
+
+//=========GENERAL===========
+
+#contact {
+  color: white;
+  padding: 2rem;
+
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+#contact-title,
+#contact-form {
+  margin: auto;
+  width: 98%;
+
+  @media screen and (min-width: 1000px) {
+    margin: 0;
+    width: 50%;
+  }
+  @media screen and (min-width: 1320px) {
+    width: 30%;
+  }
+}
+
+//=========TITLE===========
+
+#contact-title {
+  margin-bottom: 2rem;
+  font-family: "arial";
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-link {
+    img {
+      width: 10%;
+    }
+  }
+}
+
+//=========IMAGE===========
+
+#contact-img {
+  width: 50%;
+  margin: auto;
+  @media screen and (min-width: 1080px) {
+    width: 310px;
+    margin: 0;
+  }
+}
+
+#contact-img img {
+  width: 100%;
+  display: block;
+  // border: 1px solid white;
+  margin-bottom: 2rem;
+}
+
+//=========FORM===========
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+
+  input,
+  textarea {
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    height: 2.5rem;
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 20%;
+    padding: 0.5rem;
+    align-self: flex-end;
+    min-width: 70px;
+  }
+}
+
+//! Vérifier marche à suivre pour les labbel de form
+.hidden {
+  //   visibility: hidden;
+  //   display: none;
+}
