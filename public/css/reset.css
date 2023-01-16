@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* Reset suplémentaires */
+
+a {
+	text-decoration: none;
+}
+
 * {
     box-sizing: border-box;
 }

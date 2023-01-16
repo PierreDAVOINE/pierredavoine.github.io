@@ -1,7 +1,8 @@
 // Projets
 
 #achievement {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
   h2 {
     text-align: center;
     color: white;
@@ -20,10 +21,40 @@
 }
 
 .project {
-  width: 200px;
-  height: 200px;
-
+  width: 20%;
+  height: 20%;
+  position: relative;
   img {
     width: 100%;
+  }
+  &:hover .project-details {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.project-details {
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 1rem;
+  border: 5px solid black;
+  opacity: 0;
+  h3,
+  p,
+  span {
+    color: black;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin-top: 1rem;
+  }
+  p span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    // text-decoration: underline;
   }
 }
