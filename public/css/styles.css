@@ -389,7 +389,7 @@ body {
 }
 
 .anim-col1 {
-  animation: 15s ease 2.8616114681s light-glow-col infinite alternate;
+  animation: 15s ease 9.8561420158s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -399,7 +399,7 @@ body {
 }
 
 .anim-col2 {
-  animation: 17s ease 7.636617524s light-glow-col infinite alternate;
+  animation: 17s ease 2.5808932618s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -409,7 +409,7 @@ body {
 }
 
 .anim-col3 {
-  animation: 20s ease 2.1204567109s light-glow-col infinite alternate;
+  animation: 20s ease 9.8659073923s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -419,7 +419,7 @@ body {
 }
 
 .anim-col4 {
-  animation: 19s ease 3.1070257376s light-glow-col infinite alternate;
+  animation: 19s ease 7.8688992852s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -427,11 +427,11 @@ body {
 }
 
 .anim-col6 {
-  animation: 18s ease 2.1382656425s light-glow-col infinite alternate;
+  animation: 18s ease 4.4049138225s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  animation: 16s ease 9.2092449534s light-glow-col infinite alternate;
+  animation: 16s ease 6.791315524s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -445,7 +445,7 @@ body {
 }
 
 .anim-col9 {
-  animation: 20s ease 1.8600749461s light-glow-col infinite alternate;
+  animation: 20s ease 9.6905738823s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -455,7 +455,7 @@ body {
 }
 
 .anim-col10 {
-  animation: 17s ease 4.4752015643s light-glow-col infinite alternate;
+  animation: 17s ease 6.1481064089s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -479,19 +479,19 @@ body {
 }
 
 .anim-lin1 {
-  animation: 15s ease 5.5459786978s light-glow-lin infinite alternate;
+  animation: 15s ease 3.2746134234s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  animation: 17s ease 7.4922058427s light-glow-lin infinite alternate;
+  animation: 17s ease 1.2364938266s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  animation: 20s ease 0.5538930272s light-glow-lin infinite alternate;
+  animation: 20s ease 2.6314695659s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  animation: 19s ease 4.1816562035s light-glow-lin infinite alternate;
+  animation: 19s ease 9.7324834381s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
@@ -595,16 +595,36 @@ body {
 }
 
 .project {
-  width: 20%;
-  height: 20%;
+  width: 80%;
   position: relative;
 }
 .project img {
   width: 100%;
+  border: 10px solid black;
 }
 .project:hover .project-details {
   opacity: 1;
   transform: translateY(-100%);
+}
+@media screen and (min-width: 500px) {
+  .project {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 725px) {
+  .project {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .project {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1430px) {
+  .project {
+    width: 20%;
+  }
 }
 
 .project-details {
