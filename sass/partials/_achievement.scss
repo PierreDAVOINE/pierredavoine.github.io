@@ -1,0 +1,72 @@
+// Projets
+
+#achievement {
+  margin-bottom: 3rem;
+  overflow: hidden;
+  h2 {
+    text-align: center;
+    color: white;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+}
+
+#achievement-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  width: 80%;
+  margin: auto;
+}
+
+.project {
+  width: 80%;
+  position: relative;
+  img {
+    width: 100%;
+    border: 10px solid black;
+  }
+  &:hover .project-details {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  @media screen and (min-width: 500px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 725px) {
+    width: 40%;
+  }
+  @media screen and (min-width: 900px) {
+    width: 35%;
+  }
+  @media screen and (min-width: 1430px) {
+    width: 20%;
+  }
+}
+
+.project-details {
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 1rem;
+  border: 5px solid black;
+  opacity: 0;
+  h3,
+  p,
+  span {
+    color: black;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin-top: 1rem;
+  }
+  p span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    // text-decoration: underline;
+  }
+}
