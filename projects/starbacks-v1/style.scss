@@ -1,0 +1,497 @@
+//-----------------FONT------------------//
+@import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+
+@font-face {
+  font-family: "SoDo Sans SemiBold";
+  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot");
+  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold")
+      format("svg");
+}
+
+//-----------------VARIABLES------------------//
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1084px) {
+    flex-wrap: wrap;
+  }
+}
+
+//-----------------RESET------------------//
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 14px;
+  font-family: "SoDo Sans SemiBold", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+//-----------------HEADER------------------//
+
+nav,
+.nav-left,
+.nav-left ul,
+.nav-right {
+  @include flex;
+}
+
+nav,
+.nav-left,
+.nav-right {
+  height: 100px;
+}
+
+nav {
+  padding: 0 20px;
+  justify-content: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nav-left {
+  margin: 0 10px;
+
+  & li {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+  }
+
+  & a:hover {
+    color: #006341;
+  }
+}
+
+.nav-right {
+  align-content: center;
+}
+
+.logo-sb img {
+  width: 50px;
+  height: 50px;
+}
+
+.find-me {
+  @include flex;
+  padding: 7px 20px;
+  &:hover {
+    color: #006341;
+  }
+}
+
+.nav-btn {
+  padding: 8px 20px 6px 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 0 10px;
+
+  &:hover {
+    color: #006341;
+    border-color: #006341;
+  }
+}
+
+.btn-nav-black {
+  background: black;
+  color: white;
+  &:hover {
+    background: #006341;
+    color: white;
+  }
+}
+
+//-----------------Mobile Nav Button----------//
+
+.mobile-button {
+  visibility: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+
+  &:hover {
+    background: lightgray;
+  }
+
+  & .bar {
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 2px;
+    background: grey;
+    border-radius: 10px;
+
+    &:first-child {
+      top: 14px;
+    }
+
+    &:nth-child(2) {
+      top: 22px;
+    }
+
+    &:nth-child(3) {
+      top: 30px;
+    }
+  }
+}
+
+.close {
+  &:first-child {
+    animation: bar1-close 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(2) {
+    animation: bar2-close 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(3) {
+    animation: bar3-close 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.active {
+  &:first-child {
+    animation: bar1-active 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(2) {
+    animation: bar2-active 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &:nth-child(3) {
+    animation: bar3-active 0.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes bar1-active {
+  0% {
+    transform: rotate(0);
+    top: 14px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 22px;
+  }
+}
+
+@keyframes bar2-active {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes bar3-active {
+  0% {
+    transform: rotate(0);
+    top: 30px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 22px;
+  }
+}
+
+@keyframes bar1-close {
+  0% {
+    transform: rotate(45deg);
+    top: 22px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(0);
+    top: 14px;
+  }
+}
+
+@keyframes bar2-close {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bar3-close {
+  0% {
+    transform: rotate(-45deg);
+    top: 22px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(0);
+    top: 30px;
+  }
+}
+
+//-----------------Responsive Menu----------//
+
+.mobile-nav {
+  visibility: hidden;
+  padding: 40px 20px;
+  opacity: 0;
+  transform: translateX(100%);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: calc(100vh - 103px);
+  background: white;
+  z-index: 2;
+
+  & .find-me {
+    margin-top: 30px;
+  }
+}
+
+.show {
+  transition: 0.8s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.mobile-menu {
+  & li {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.mobile-nav,
+.mobile-button {
+  @media screen and (max-width: 1084px) {
+    visibility: visible;
+  }
+}
+
+.menu,
+.nav-right {
+  @media screen and (max-width: 1084px) {
+    visibility: hidden;
+  }
+}
+
+//-----------------MAIN------------------//
+
+main {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 3px -2px;
+  padding: 0 1rem;
+  @media screen and (min-width: 720px) {
+    padding: 0;
+  }
+}
+
+.contenair {
+  @include flex;
+  margin: 30px auto;
+  max-width: 1440px;
+  justify-content: center;
+}
+
+//---- first small article
+
+.img-rewards,
+.img-rewards img,
+.txt-rewards {
+  width: 100%;
+  @media screen and (min-width: 720px) {
+    width: 50em;
+    height: 210px;
+  }
+}
+
+.txt-rewards {
+  text-align: center;
+  padding: 50px;
+  background: #1e3932;
+  color: white;
+
+  & h1 {
+    margin-bottom: 40px;
+  }
+
+  & .btn {
+    padding: 9px 20px 7px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.12);
+    }
+  }
+}
+
+//----big articles
+
+.img,
+.img img,
+.txt {
+  width: 100%;
+  @media screen and (min-width: 720px) {
+    height: 625px;
+    width: 50em;
+  }
+}
+
+.txt {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & h1 {
+    margin-bottom: 60px;
+    font-size: 3rem;
+  }
+
+  & p {
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    font-family: helvetica;
+    font-weight: 500;
+  }
+
+  & .btn {
+    padding: 9px 20px 7px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    align-self: center;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.12);
+    }
+  }
+}
+
+.txt-black {
+  color: black;
+}
+
+.txt-white {
+  color: white;
+}
+
+.bg-pink {
+  background: #fa91aa;
+}
+
+.bg-red {
+  background: #f06464;
+}
+
+.bg-orange {
+  background: #faaa5a;
+}
+
+.bg-green {
+  background: #9bf5b4;
+}
+
+.btn-black {
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-white {
+  color: white;
+  border: 2px solid white;
+}
+
+//-----------------MAIN - NOTES------------------//
+
+.notes {
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 60px;
+
+  & p:first-child {
+    padding-bottom: 40px;
+  }
+}
+
+//-----------------FOOTER------------------//
+
+footer {
+  @include flex;
+  padding: 30px;
+  align-items: baseline;
+}
+
+.column {
+  margin-right: 30px;
+  width: 190px;
+
+  & h2 {
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+
+  & a {
+    color: grey;
+  }
+
+  & li {
+    padding-bottom: 20px;
+  }
+}
