@@ -78,13 +78,13 @@ async function getWeather(lat, lon) {
       console.log(myWeatherStatus);
       if (myWeatherStatus === "Clear sky" || myWeatherStatus === "Clear") {
         document.body.style.background =
-          "url(../public/img/bg-sun.jpg) no-repeat center/cover";
+          "url(../public/img/bg-sun.jpg) no-repeat center/cover fixed";
         for (const value of values) {
           value.style.color = "black";
         }
       } else if (myWeatherStatus === "Snow") {
         document.body.style.background =
-          "url(../public/img/bg-snow.jpg) no-repeat center/cover";
+          "url(../public/img/bg-snow.jpg) no-repeat center/cover fixed";
         for (const value of values) {
           value.style.color = "black";
         }
@@ -94,13 +94,13 @@ async function getWeather(lat, lon) {
         myWeatherStatus === "Thunderstorm"
       ) {
         document.body.style.background =
-          "url(../public/img/bg-rain.jpg) no-repeat center/cover";
+          "url(../public/img/bg-rain.jpg) no-repeat center/cover fixed";
         for (const value of values) {
           value.style.color = "lightcyan";
         }
       } else {
         document.body.style.background =
-          "url(../public/img/bg-cloud.jpg) no-repeat center/cover";
+          "url(../public/img/bg-cloud.jpg) no-repeat center/cover fixed";
         for (const value of values) {
           value.style.color = "lightcyan";
         }
