@@ -30,7 +30,7 @@ const windShow = document.querySelector(".wind-value");
 const apiKey = "9843a344764c7816f2325b732271f5e4";
 
 async function getGps(city) {
-  console.log("Demande de coordonées GPS");
+  // console.log("Demande de coordonées GPS");
   let url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},fr&limit=2&appid=${apiKey}`;
 
   await fetch(url)
@@ -41,8 +41,8 @@ async function getGps(city) {
     .then((data) => {
       let myData = data;
       let nbData = Object.keys(myData).length;
-      console.log("Informations réceptionnées :");
-      console.log(`${nbData} villes trouvées la première est séléctionnée.`);
+      // console.log("Informations réceptionnées :");
+      // console.log(`${nbData} villes trouvées la première est séléctionnée.`);
 
       if (nbData > 0) {
         let name = myData[0].name;
@@ -50,9 +50,9 @@ async function getGps(city) {
         let country = myData[0].country;
         let lat = myData[0].lat;
         let lon = myData[0].lon;
-        console.log(
-          `Demande de météo pour la ville : ${name}, département : ${departement}, pays : ${country}, latitude: ${lat}, longitude: ${lon}.`
-        );
+        // console.log(
+        //   `Demande de météo pour la ville : ${name}, département : ${departement}, pays : ${country}, latitude: ${lat}, longitude: ${lon}.`
+        // );
         getWeather(lat, lon);
 
         //une fois les valeurs chargées par getWeather on confirme le nom de la ville
@@ -64,7 +64,7 @@ async function getGps(city) {
 }
 
 async function getWeather(lat, lon) {
-  console.log("Demande de météo en cours...");
+  // console.log("Demande de météo en cours...");
 
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   await fetch(url)
@@ -75,7 +75,7 @@ async function getWeather(lat, lon) {
     .then((data) => {
       let myWeather = data;
       let myWeatherStatus = myWeather.weather[0].main;
-      console.log(myWeatherStatus);
+      // console.log(myWeatherStatus);
       if (myWeatherStatus === "Clear sky" || myWeatherStatus === "Clear") {
         document.body.style.background =
           "url(../public/img/bg-sun.jpg) no-repeat center/cover fixed";
@@ -110,9 +110,9 @@ async function getWeather(lat, lon) {
       let myTemp = Math.round(myWeather.main.temp - 273.15); //passage du Kelvin en Celcius +  arrondit
       let myWet = Math.round(myWeather.main.humidity);
       let myWind = Math.round(myWeather.wind.speed * 3.6); //passage du m/s en km/h
-      console.log(
-        `Température : ${myTemp}°C. Humidité = ${myWet}%. Vent = ${myWind}km/h`
-      );
+      // console.log(
+      //   `Température : ${myTemp}°C. Humidité = ${myWet}%. Vent = ${myWind}km/h`
+      // );
 
       // Affichage des infos en front
       weatherImg.src = myWeatherIcon;
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 cityForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let cityAsk = cityInput.value;
-  console.log("Ville demandé : " + cityAsk);
+  // console.log("Ville demandé : " + cityAsk);
 
   if (isNaN(cityAsk)) {
     getGps(cityAsk);

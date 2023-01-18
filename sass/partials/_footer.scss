@@ -1,0 +1,58 @@
+// =====FOOTER===== //
+
+footer {
+  padding: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  #mentions-link {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+// =====mentions legales===== //
+
+#mentions-legales {
+  display: none;
+  width: 80%;
+  //   height: 80%;
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 2rem;
+  position: absolute;
+  left: 10%;
+  bottom: 100%;
+  border-radius: 15px;
+
+  &.show-mentions {
+    display: block;
+  }
+
+  img {
+    width: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.1s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+    // @media screen and (min-width: 500px) {
+    //   width: 10%;
+    // }
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}

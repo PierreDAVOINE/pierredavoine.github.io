@@ -27,10 +27,13 @@
     width: 100%;
     border: 10px solid black;
   }
-  &:hover .project-details {
-    opacity: 1;
-    transform: translateY(-100%);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover .project-details {
+      opacity: 1;
+      transform: translateY(-100%);
+    }
   }
+
   @media screen and (min-width: 500px) {
     width: 60%;
   }
