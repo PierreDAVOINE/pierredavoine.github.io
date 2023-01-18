@@ -253,7 +253,7 @@ nav {
   right: 0;
   bottom: 0;
   width: 80%;
-  height: calc(100vh - 128px);
+  height: calc((100vh - 103px) - 26px);
   background: white;
   z-index: 2;
 }

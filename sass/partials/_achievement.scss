@@ -23,6 +23,11 @@
 .project {
   width: 80%;
   position: relative;
+  &:hover .project-details,
+  &active .project-details {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
   img {
     width: 100%;
     border: 10px solid black;
@@ -39,13 +44,6 @@
   }
   @media screen and (min-width: 1430px) {
     width: 20%;
-  }
-}
-
-@media (hover: hover) and (pointer: coarse) {
-  .project:hover .project-details {
-    opacity: 1;
-    transform: translateY(-100%);
   }
 }
 
