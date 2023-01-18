@@ -31,7 +31,7 @@ const apiKey = "9843a344764c7816f2325b732271f5e4";
 
 async function getGps(city) {
   console.log("Demande de coordonées GPS");
-  let url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},fr&limit=2&appid=${apiKey}`;
+  let url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},fr&limit=2&appid=${apiKey}`;
 
   await fetch(url)
     .then((response) => {
