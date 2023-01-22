@@ -252,7 +252,7 @@
 #grid-titles {
   position: absolute;
   top: -60px;
-  z-index: 20;
+  z-index: 50;
   width: 100%;
   padding: 0 1rem;
 
@@ -312,6 +312,7 @@
 
 #shadow {
   position: absolute;
+  z-index: 45;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -331,7 +332,7 @@
   display: flex;
   transform-origin: top center;
   transform: rotateX(65deg);
-
+  z-index: 30;
   .column {
     border-right: 1px solid $bg-lines;
     width: 10%;
@@ -403,7 +404,7 @@
   height: 100%;
   transform-origin: top;
   transform: rotateX(60deg);
-
+  z-index: 31;
   .line {
     width: 100%;
     height: 25%;

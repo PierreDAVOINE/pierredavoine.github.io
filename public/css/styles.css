@@ -390,7 +390,7 @@ body {
 #grid-titles {
   position: absolute;
   top: -60px;
-  z-index: 20;
+  z-index: 50;
   width: 100%;
   padding: 0 1rem;
 }
@@ -460,6 +460,7 @@ body {
 
 #shadow {
   position: absolute;
+  z-index: 45;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -472,6 +473,7 @@ body {
   display: flex;
   transform-origin: top center;
   transform: rotateX(65deg);
+  z-index: 30;
 }
 #columns .column {
   border-right: 1px solid rgb(45, 45, 45);
@@ -480,8 +482,8 @@ body {
 }
 
 .anim-col1 {
-  -webkit-animation: 15s ease 4.5137580183s light-glow-col infinite alternate;
-          animation: 15s ease 4.5137580183s light-glow-col infinite alternate;
+  -webkit-animation: 15s ease 6.6132811049s light-glow-col infinite alternate;
+          animation: 15s ease 6.6132811049s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -491,8 +493,8 @@ body {
 }
 
 .anim-col2 {
-  -webkit-animation: 17s ease 2.9063164595s light-glow-col infinite alternate;
-          animation: 17s ease 2.9063164595s light-glow-col infinite alternate;
+  -webkit-animation: 17s ease 7.2022011025s light-glow-col infinite alternate;
+          animation: 17s ease 7.2022011025s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -502,8 +504,8 @@ body {
 }
 
 .anim-col3 {
-  -webkit-animation: 20s ease 9.059875184s light-glow-col infinite alternate;
-          animation: 20s ease 9.059875184s light-glow-col infinite alternate;
+  -webkit-animation: 20s ease 1.7075161122s light-glow-col infinite alternate;
+          animation: 20s ease 1.7075161122s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -513,8 +515,8 @@ body {
 }
 
 .anim-col4 {
-  -webkit-animation: 19s ease 0.3338849767s light-glow-col infinite alternate;
-          animation: 19s ease 0.3338849767s light-glow-col infinite alternate;
+  -webkit-animation: 19s ease 3.6470474094s light-glow-col infinite alternate;
+          animation: 19s ease 3.6470474094s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -523,13 +525,13 @@ body {
 }
 
 .anim-col6 {
-  -webkit-animation: 18s ease 5.1781594242s light-glow-col infinite alternate;
-          animation: 18s ease 5.1781594242s light-glow-col infinite alternate;
+  -webkit-animation: 18s ease 1.1744911654s light-glow-col infinite alternate;
+          animation: 18s ease 1.1744911654s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  -webkit-animation: 16s ease 7.8877558264s light-glow-col infinite alternate;
-          animation: 16s ease 7.8877558264s light-glow-col infinite alternate;
+  -webkit-animation: 16s ease 6.117325266s light-glow-col infinite alternate;
+          animation: 16s ease 6.117325266s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -544,8 +546,8 @@ body {
 }
 
 .anim-col9 {
-  -webkit-animation: 20s ease 2.0514831723s light-glow-col infinite alternate;
-          animation: 20s ease 2.0514831723s light-glow-col infinite alternate;
+  -webkit-animation: 20s ease 1.3575506388s light-glow-col infinite alternate;
+          animation: 20s ease 1.3575506388s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -555,8 +557,8 @@ body {
 }
 
 .anim-col10 {
-  -webkit-animation: 17s ease 0.4683489131s light-glow-col infinite alternate;
-          animation: 17s ease 0.4683489131s light-glow-col infinite alternate;
+  -webkit-animation: 17s ease 5.8499553232s light-glow-col infinite alternate;
+          animation: 17s ease 5.8499553232s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -572,6 +574,7 @@ body {
   height: 100%;
   transform-origin: top;
   transform: rotateX(60deg);
+  z-index: 31;
 }
 #lines .line {
   width: 100%;
@@ -580,23 +583,23 @@ body {
 }
 
 .anim-lin1 {
-  -webkit-animation: 15s ease 2.6481085258s light-glow-lin infinite alternate;
-          animation: 15s ease 2.6481085258s light-glow-lin infinite alternate;
+  -webkit-animation: 15s ease 4.7980521016s light-glow-lin infinite alternate;
+          animation: 15s ease 4.7980521016s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  -webkit-animation: 17s ease 8.3271562014s light-glow-lin infinite alternate;
-          animation: 17s ease 8.3271562014s light-glow-lin infinite alternate;
+  -webkit-animation: 17s ease 7.4650665812s light-glow-lin infinite alternate;
+          animation: 17s ease 7.4650665812s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  -webkit-animation: 20s ease 5.1291250922s light-glow-lin infinite alternate;
-          animation: 20s ease 5.1291250922s light-glow-lin infinite alternate;
+  -webkit-animation: 20s ease 2.6410109522s light-glow-lin infinite alternate;
+          animation: 20s ease 2.6410109522s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  -webkit-animation: 19s ease 5.2606300148s light-glow-lin infinite alternate;
-          animation: 19s ease 5.2606300148s light-glow-lin infinite alternate;
+  -webkit-animation: 19s ease 9.1128489646s light-glow-lin infinite alternate;
+          animation: 19s ease 9.1128489646s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
