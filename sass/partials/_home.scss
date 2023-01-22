@@ -333,6 +333,7 @@
   transform-origin: top center;
   transform: rotateX(65deg);
   z-index: 30;
+  position: relative;
   .column {
     border-right: 1px solid $bg-lines;
     width: 10%;
