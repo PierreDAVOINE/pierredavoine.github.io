@@ -245,7 +245,6 @@
   height: 40vh;
   background: black;
   position: relative;
-  // overflow: hidden;
 }
 
 #wrap-grid {
@@ -270,7 +269,7 @@
     font-size: 1.1rem;
     line-height: 2rem;
     position: relative;
-    top: -100px;
+    top: -55px;
 
     @media screen and (min-width: 500px) {
       font-size: 1.5rem;
