@@ -141,29 +141,56 @@ nav {
 }
 
 .close:first-child {
-  animation: bar1-close 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar1-close 0.5s;
+          animation: bar1-close 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .close:nth-child(2) {
-  animation: bar2-close 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar2-close 0.5s;
+          animation: bar2-close 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .close:nth-child(3) {
-  animation: bar3-close 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar3-close 0.5s;
+          animation: bar3-close 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .active:first-child {
-  animation: bar1-active 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar1-active 0.5s;
+          animation: bar1-active 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .active:nth-child(2) {
-  animation: bar2-active 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar2-active 0.5s;
+          animation: bar2-active 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .active:nth-child(3) {
-  animation: bar3-active 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: bar3-active 0.5s;
+          animation: bar3-active 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bar1-active {
+  0% {
+    transform: rotate(0);
+    top: 14px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 22px;
+  }
 }
 
 @keyframes bar1-active {
@@ -180,6 +207,17 @@ nav {
     top: 22px;
   }
 }
+@-webkit-keyframes bar2-active {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
 @keyframes bar2-active {
   0% {
     transform: rotate(0);
@@ -189,6 +227,20 @@ nav {
   }
   100% {
     transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes bar3-active {
+  0% {
+    transform: rotate(0);
+    top: 30px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 22px;
   }
 }
 @keyframes bar3-active {
@@ -205,6 +257,20 @@ nav {
     top: 22px;
   }
 }
+@-webkit-keyframes bar1-close {
+  0% {
+    transform: rotate(45deg);
+    top: 22px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(0);
+    top: 14px;
+  }
+}
 @keyframes bar1-close {
   0% {
     transform: rotate(45deg);
@@ -219,6 +285,17 @@ nav {
     top: 14px;
   }
 }
+@-webkit-keyframes bar2-close {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 @keyframes bar2-close {
   0% {
     transform: rotate(-45deg);
@@ -228,6 +305,20 @@ nav {
   }
   100% {
     transform: rotate(0);
+  }
+}
+@-webkit-keyframes bar3-close {
+  0% {
+    transform: rotate(-45deg);
+    top: 22px;
+  }
+  50% {
+    transform: rotate(0);
+    top: 22px;
+  }
+  100% {
+    transform: rotate(0);
+    top: 30px;
   }
 }
 @keyframes bar3-close {
@@ -381,6 +472,8 @@ main {
 .txt .btn {
   padding: 9px 20px 7px 20px;
   border-radius: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
 }
@@ -459,5 +552,3 @@ footer {
 .column li {
   padding-bottom: 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
