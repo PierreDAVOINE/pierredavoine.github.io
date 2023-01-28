@@ -23,11 +23,7 @@
 .project {
   width: 80%;
   position: relative;
-  &:hover .project-details,
-  &active .project-details {
-    opacity: 1;
-    transform: translateY(-100%);
-  }
+
   img {
     width: 100%;
     border: 10px solid black;
@@ -47,13 +43,19 @@
   }
 }
 
+.project:hover .project-details,
+.hover {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
 .project-details {
   transform: translateY(100%);
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.808);
   padding: 1rem;
-  border: 5px solid black;
+  border: 10px solid black;
   opacity: 0;
   h3,
   p,

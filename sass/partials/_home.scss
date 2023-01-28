@@ -1,3 +1,17 @@
+//==============CHEVRON================//
+
+#chevron {
+  position: absolute;
+  z-index: 109;
+  right: 1rem;
+  bottom: 1rem;
+  animation: 1s fly infinite alternate;
+  @media screen and (min-width: 800px) {
+    right: 5rem;
+    bottom: 5rem;
+  }
+}
+
 //==============SKY================//
 
 // contact bar
