@@ -3,7 +3,8 @@
 const projects = document.querySelectorAll(".project");
 
 projects.forEach((project) => {
-  project.addEventListener("touchstart", () => {
+  project.addEventListener("touchstart", (e) => {
+    e.preventDefault();
     project.classList.toggle("hover");
   });
 });
