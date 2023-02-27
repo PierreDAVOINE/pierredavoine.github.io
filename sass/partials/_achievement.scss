@@ -45,7 +45,7 @@
 }
 
 .project:hover .project-details,
-.hover {
+.project.hover .project-details {
   opacity: 1;
   transform: translateY(-100%);
 }
