@@ -1,10 +1,13 @@
 // Gestion du hover tactible des projets
 
 const projects = document.querySelectorAll(".project");
+const projectsDetails = document.querySelectorAll(".project .projectdetail");
+
+console.log(proprojectsectsDetails);
 
 projects.forEach((project) => {
-  project.addEventListener("touchstart", (e) => {
-    e.preventDefault();
+  project.addEventListener("touchstart", () => {
+    // e.preventDefault();
     project.classList.toggle("hover");
   });
 });
