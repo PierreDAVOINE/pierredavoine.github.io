@@ -6,7 +6,7 @@ const projectsDetails = document.querySelectorAll(".project .projectdetail");
 console.log(proprojectsectsDetails);
 
 projects.forEach((project) => {
-  project.addEventListener("touchstart", (e) => {
+  project.addEventListener("touchstart", () => {
     // e.preventDefault();
     project.classList.toggle("hover");
   });
