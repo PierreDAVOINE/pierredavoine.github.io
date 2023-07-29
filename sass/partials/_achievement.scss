@@ -1,5 +1,5 @@
 // Projets
-
+// Container principal + titre
 #achievement {
   margin-bottom: 3rem;
   overflow: hidden;
@@ -8,10 +8,11 @@
     color: white;
     margin: 2rem 0;
     font-size: 2rem;
-    font-family: "pixel";
+    font-family: 'pixel';
   }
 }
 
+// Container des miniatures de projet
 #achievement-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +22,7 @@
   margin: auto;
 }
 
+// Style d'un projet
 .project {
   width: 80%;
   position: relative;
@@ -44,8 +46,7 @@
   }
 }
 
-.project:hover .project-details,
-.project.hover .project-details {
+.project:hover .project-details {
   opacity: 1;
   transform: translateY(-100%);
 }

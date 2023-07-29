@@ -1,10 +1,11 @@
 @font-face {
-  font-family: "amsterdam";
-  src: local("amsterdam"), local("amsterdam"), url("../font/Amsterdam Four_ttf 400.ttf");
+  font-family: 'amsterdam';
+  src: local('amsterdam'), local('amsterdam'),
+    url('../font/Amsterdam Four_ttf 400.ttf');
 }
 @font-face {
-  font-family: "pixel";
-  src: local("pixel"), local("pixel"), url("../font/Pixel.ttf");
+  font-family: 'pixel';
+  src: local('pixel'), local('pixel'), url('../font/Pixel.ttf');
 }
 @-webkit-keyframes light-glow-col {
   0% {
@@ -13,7 +14,8 @@
   }
   25% {
     border-right: 1px solid rgb(202, 46, 216);
-    box-shadow: rgb(202, 46, 216) -10px 0px 45px -7px inset, rgb(202, 46, 216) 10px 0px 45px -7px;
+    box-shadow: rgb(202, 46, 216) -10px 0px 45px -7px inset,
+      rgb(202, 46, 216) 10px 0px 45px -7px;
   }
   50% {
     border-right: 1px solid rgb(45, 45, 45);
@@ -25,7 +27,8 @@
   }
   75% {
     border-right: 1px solid rgb(39, 168, 243);
-    box-shadow: rgb(39, 168, 243) -10px 0px 45px -7px inset, rgb(39, 168, 243) 10px 0px 45px -7px;
+    box-shadow: rgb(39, 168, 243) -10px 0px 45px -7px inset,
+      rgb(39, 168, 243) 10px 0px 45px -7px;
   }
   80% {
     border-right: 1px solid rgb(45, 45, 45);
@@ -43,7 +46,8 @@
   }
   25% {
     border-right: 1px solid rgb(202, 46, 216);
-    box-shadow: rgb(202, 46, 216) -10px 0px 45px -7px inset, rgb(202, 46, 216) 10px 0px 45px -7px;
+    box-shadow: rgb(202, 46, 216) -10px 0px 45px -7px inset,
+      rgb(202, 46, 216) 10px 0px 45px -7px;
   }
   50% {
     border-right: 1px solid rgb(45, 45, 45);
@@ -55,7 +59,8 @@
   }
   75% {
     border-right: 1px solid rgb(39, 168, 243);
-    box-shadow: rgb(39, 168, 243) -10px 0px 45px -7px inset, rgb(39, 168, 243) 10px 0px 45px -7px;
+    box-shadow: rgb(39, 168, 243) -10px 0px 45px -7px inset,
+      rgb(39, 168, 243) 10px 0px 45px -7px;
   }
   80% {
     border-right: 1px solid rgb(45, 45, 45);
@@ -73,7 +78,8 @@
   }
   25% {
     border-top: 1px solid rgb(39, 168, 243);
-    box-shadow: rgb(39, 168, 243) 0px 10px 45px -7px inset, rgb(39, 168, 243) 0px -15px 45px -7px;
+    box-shadow: rgb(39, 168, 243) 0px 10px 45px -7px inset,
+      rgb(39, 168, 243) 0px -15px 45px -7px;
   }
   50% {
     border-top: 1px solid rgb(45, 45, 45);
@@ -85,7 +91,8 @@
   }
   75% {
     border-top: 1px solid rgb(202, 46, 216);
-    box-shadow: rgb(202, 46, 216) 0px 10px 45px -7px inset, rgb(202, 46, 216) 0px -15px 45px -7px;
+    box-shadow: rgb(202, 46, 216) 0px 10px 45px -7px inset,
+      rgb(202, 46, 216) 0px -15px 45px -7px;
   }
   80% {
     border-top: 1px solid rgb(45, 45, 45);
@@ -103,7 +110,8 @@
   }
   25% {
     border-top: 1px solid rgb(39, 168, 243);
-    box-shadow: rgb(39, 168, 243) 0px 10px 45px -7px inset, rgb(39, 168, 243) 0px -15px 45px -7px;
+    box-shadow: rgb(39, 168, 243) 0px 10px 45px -7px inset,
+      rgb(39, 168, 243) 0px -15px 45px -7px;
   }
   50% {
     border-top: 1px solid rgb(45, 45, 45);
@@ -115,7 +123,8 @@
   }
   75% {
     border-top: 1px solid rgb(202, 46, 216);
-    box-shadow: rgb(202, 46, 216) 0px 10px 45px -7px inset, rgb(202, 46, 216) 0px -15px 45px -7px;
+    box-shadow: rgb(202, 46, 216) 0px 10px 45px -7px inset,
+      rgb(202, 46, 216) 0px -15px 45px -7px;
   }
   80% {
     border-top: 1px solid rgb(45, 45, 45);
@@ -183,11 +192,17 @@ body {
   font-size: 1.8rem;
   background: none;
   color: white;
-  font-family: "pixel";
+  font-family: 'pixel';
 }
 
 .bg-page {
-  background: radial-gradient(circle, rgb(75, 19, 97) 0%, rgb(93, 23, 101) 30%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(75, 19, 97) 0%,
+    rgb(93, 23, 101) 30%,
+    rgb(40, 33, 94) 92%,
+    rgb(33, 11, 47) 100%
+  );
 }
 
 #chevron {
@@ -196,7 +211,7 @@ body {
   right: 1rem;
   bottom: 1rem;
   -webkit-animation: 1s fly infinite alternate;
-          animation: 1s fly infinite alternate;
+  animation: 1s fly infinite alternate;
 }
 @media screen and (min-width: 800px) {
   #chevron {
@@ -248,16 +263,34 @@ body {
   position: relative;
   z-index: -5;
   background: rgb(29, 6, 38);
-  background: radial-gradient(circle, rgb(29, 6, 38) 0%, rgb(93, 23, 101) 30%, rgb(139, 34, 133) 60%, rgb(40, 33, 94) 92%, rgb(33, 11, 47) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(29, 6, 38) 0%,
+    rgb(93, 23, 101) 30%,
+    rgb(139, 34, 133) 60%,
+    rgb(40, 33, 94) 92%,
+    rgb(33, 11, 47) 100%
+  );
 }
 @media screen and (min-width: 1400px) {
   #sky {
-    background: radial-gradient(circle, rgb(29, 6, 38) 0%, rgb(93, 23, 101) 30%, rgb(139, 34, 133) 60%, rgb(40, 33, 94) 80%, rgb(33, 11, 47) 100%);
+    background: radial-gradient(
+      circle,
+      rgb(29, 6, 38) 0%,
+      rgb(93, 23, 101) 30%,
+      rgb(139, 34, 133) 60%,
+      rgb(40, 33, 94) 80%,
+      rgb(33, 11, 47) 100%
+    );
   }
 }
 
 #sun {
-  background: linear-gradient(0deg, rgb(253, 53, 138) 0%, rgb(252, 240, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(253, 53, 138) 0%,
+    rgb(252, 240, 0) 100%
+  );
   box-shadow: -1px -2px 30px 3px rgba(250, 105, 25, 0.75);
   height: 45vh;
   width: 45vh;
@@ -270,7 +303,7 @@ body {
   justify-content: center;
   align-items: center;
   -webkit-animation: 7s wakeup-sun;
-          animation: 7s wakeup-sun;
+  animation: 7s wakeup-sun;
 }
 @media screen and (min-width: 900px) {
   #sun {
@@ -283,10 +316,10 @@ body {
 #sun img {
   width: 60%;
   -webkit-filter: drop-shadow(-10px 5px 20px #000);
-          filter: drop-shadow(-10px 5px 20px #000);
+  filter: drop-shadow(-10px 5px 20px #000);
   margin-bottom: 1rem;
   -webkit-animation: 6s ease-in fly infinite alternate;
-          animation: 6s ease-in fly infinite alternate;
+  animation: 6s ease-in fly infinite alternate;
 }
 @media screen and (min-width: 1400px) {
   #sun img {
@@ -299,7 +332,7 @@ body {
   border-radius: 50px;
   background-color: beige;
   -webkit-animation: 10s wakeup-sun;
-          animation: 10s wakeup-sun;
+  animation: 10s wakeup-sun;
 }
 .stars.star1 {
   top: 10%;
@@ -362,7 +395,7 @@ body {
   width: 100%;
   height: 30%;
   -webkit-animation: 10s wakeup-sun;
-          animation: 10s wakeup-sun;
+  animation: 10s wakeup-sun;
 }
 @media screen and (min-width: 1400px) {
   #mountains-container {
@@ -374,7 +407,11 @@ body {
   position: absolute;
   width: 30%;
   height: 100%;
-  background-image: linear-gradient(#000 70%, #111 85%, rgba(17, 17, 17, 0.771));
+  background-image: linear-gradient(
+    #000 70%,
+    #111 85%,
+    rgba(17, 17, 17, 0.771)
+  );
 }
 @media screen and (min-width: 1400px) {
   .mountain {
@@ -384,14 +421,90 @@ body {
 
 #mountain-left {
   left: 0;
-  -webkit-clip-path: polygon(0% 100%, 0% 55%, 5% 60%, 10% 55%, 20% 50%, 25% 42%, 30% 38%, 33% 35%, 40% 45%, 50% 50%, 60% 70%, 70% 85%, 75% 82%, 80% 91%, 85% 90%, 90% 95%, 95% 98%, 100% 100%);
-          clip-path: polygon(0% 100%, 0% 55%, 5% 60%, 10% 55%, 20% 50%, 25% 42%, 30% 38%, 33% 35%, 40% 45%, 50% 50%, 60% 70%, 70% 85%, 75% 82%, 80% 91%, 85% 90%, 90% 95%, 95% 98%, 100% 100%);
+  -webkit-clip-path: polygon(
+    0% 100%,
+    0% 55%,
+    5% 60%,
+    10% 55%,
+    20% 50%,
+    25% 42%,
+    30% 38%,
+    33% 35%,
+    40% 45%,
+    50% 50%,
+    60% 70%,
+    70% 85%,
+    75% 82%,
+    80% 91%,
+    85% 90%,
+    90% 95%,
+    95% 98%,
+    100% 100%
+  );
+  clip-path: polygon(
+    0% 100%,
+    0% 55%,
+    5% 60%,
+    10% 55%,
+    20% 50%,
+    25% 42%,
+    30% 38%,
+    33% 35%,
+    40% 45%,
+    50% 50%,
+    60% 70%,
+    70% 85%,
+    75% 82%,
+    80% 91%,
+    85% 90%,
+    90% 95%,
+    95% 98%,
+    100% 100%
+  );
 }
 
 #mountain-right {
   right: 0;
-  -webkit-clip-path: polygon(0% 100%, 5% 95%, 10% 85%, 15% 87%, 20% 80%, 25% 78%, 30% 65%, 40% 70%, 50% 57%, 60% 53%, 67% 68%, 70% 70%, 75% 66%, 80% 55%, 90% 50%, 95% 60%, 100% 57%, 100% 100%);
-          clip-path: polygon(0% 100%, 5% 95%, 10% 85%, 15% 87%, 20% 80%, 25% 78%, 30% 65%, 40% 70%, 50% 57%, 60% 53%, 67% 68%, 70% 70%, 75% 66%, 80% 55%, 90% 50%, 95% 60%, 100% 57%, 100% 100%);
+  -webkit-clip-path: polygon(
+    0% 100%,
+    5% 95%,
+    10% 85%,
+    15% 87%,
+    20% 80%,
+    25% 78%,
+    30% 65%,
+    40% 70%,
+    50% 57%,
+    60% 53%,
+    67% 68%,
+    70% 70%,
+    75% 66%,
+    80% 55%,
+    90% 50%,
+    95% 60%,
+    100% 57%,
+    100% 100%
+  );
+  clip-path: polygon(
+    0% 100%,
+    5% 95%,
+    10% 85%,
+    15% 87%,
+    20% 80%,
+    25% 78%,
+    30% 65%,
+    40% 70%,
+    50% 57%,
+    60% 53%,
+    67% 68%,
+    70% 70%,
+    75% 66%,
+    80% 55%,
+    90% 50%,
+    95% 60%,
+    100% 57%,
+    100% 100%
+  );
 }
 
 #grid {
@@ -418,7 +531,7 @@ body {
 #grid-titles h1 {
   text-align: center;
   color: white;
-  font-family: "pixel";
+  font-family: 'pixel';
   font-size: 1.1rem;
   line-height: 2rem;
   position: relative;
@@ -469,14 +582,14 @@ body {
   stroke-linecap: round;
   stroke-miterlimit: 10;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .animated .sig__path {
   opacity: 1;
   -webkit-animation-name: line;
-          animation-name: line;
+  animation-name: line;
 }
 
 #shadow {
@@ -485,7 +598,12 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgb(0, 0, 0) 100%
+  );
 }
 
 #columns {
@@ -506,7 +624,7 @@ body {
 
 .anim-col1 {
   -webkit-animation: 15s ease 0.1838822538s light-glow-col infinite alternate;
-          animation: 15s ease 0.1838822538s light-glow-col infinite alternate;
+  animation: 15s ease 0.1838822538s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -517,7 +635,7 @@ body {
 
 .anim-col2 {
   -webkit-animation: 17s ease 5.6047163618s light-glow-col infinite alternate;
-          animation: 17s ease 5.6047163618s light-glow-col infinite alternate;
+  animation: 17s ease 5.6047163618s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -528,7 +646,7 @@ body {
 
 .anim-col3 {
   -webkit-animation: 20s ease 6.9525761076s light-glow-col infinite alternate;
-          animation: 20s ease 6.9525761076s light-glow-col infinite alternate;
+  animation: 20s ease 6.9525761076s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -539,27 +657,27 @@ body {
 
 .anim-col4 {
   -webkit-animation: 19s ease 4.6839944681s light-glow-col infinite alternate;
-          animation: 19s ease 4.6839944681s light-glow-col infinite alternate;
+  animation: 19s ease 4.6839944681s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
   -webkit-animation: 24s ease light-glow-col infinite alternate;
-          animation: 24s ease light-glow-col infinite alternate;
+  animation: 24s ease light-glow-col infinite alternate;
 }
 
 .anim-col6 {
   -webkit-animation: 18s ease 8.4601407979s light-glow-col infinite alternate;
-          animation: 18s ease 8.4601407979s light-glow-col infinite alternate;
+  animation: 18s ease 8.4601407979s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
   -webkit-animation: 16s ease 4.6418358164s light-glow-col infinite alternate;
-          animation: 16s ease 4.6418358164s light-glow-col infinite alternate;
+  animation: 16s ease 4.6418358164s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
   -webkit-animation: 22s ease 2s light-glow-col infinite alternate;
-          animation: 22s ease 2s light-glow-col infinite alternate;
+  animation: 22s ease 2s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -570,7 +688,7 @@ body {
 
 .anim-col9 {
   -webkit-animation: 20s ease 1.4307734517s light-glow-col infinite alternate;
-          animation: 20s ease 1.4307734517s light-glow-col infinite alternate;
+  animation: 20s ease 1.4307734517s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -581,7 +699,7 @@ body {
 
 .anim-col10 {
   -webkit-animation: 17s ease 9.069680666s light-glow-col infinite alternate;
-          animation: 17s ease 9.069680666s light-glow-col infinite alternate;
+  animation: 17s ease 9.069680666s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -608,27 +726,27 @@ body {
 
 .anim-lin1 {
   -webkit-animation: 15s ease 7.3791958187s light-glow-lin infinite alternate;
-          animation: 15s ease 7.3791958187s light-glow-lin infinite alternate;
+  animation: 15s ease 7.3791958187s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
   -webkit-animation: 17s ease 9.8109012759s light-glow-lin infinite alternate;
-          animation: 17s ease 9.8109012759s light-glow-lin infinite alternate;
+  animation: 17s ease 9.8109012759s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
   -webkit-animation: 20s ease 9.121236683s light-glow-lin infinite alternate;
-          animation: 20s ease 9.121236683s light-glow-lin infinite alternate;
+  animation: 20s ease 9.121236683s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
   -webkit-animation: 19s ease 0.9863336479s light-glow-lin infinite alternate;
-          animation: 19s ease 0.9863336479s light-glow-lin infinite alternate;
+  animation: 19s ease 0.9863336479s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
   -webkit-animation: 24s ease light-glow-lin infinite alternate;
-          animation: 24s ease light-glow-lin infinite alternate;
+  animation: 24s ease light-glow-lin infinite alternate;
 }
 
 #skills {
@@ -661,12 +779,12 @@ body {
   transition: 0.2s;
   width: 40%;
   -webkit-filter: drop-shadow(-2px 1px 5px #000);
-          filter: drop-shadow(-2px 1px 5px #000);
+  filter: drop-shadow(-2px 1px 5px #000);
 }
 .skill-img img:hover {
   transform: scale(1.1);
   -webkit-filter: drop-shadow(-2px 4px 9px #000);
-          filter: drop-shadow(-2px 4px 9px #000);
+  filter: drop-shadow(-2px 4px 9px #000);
 }
 @media screen and (min-width: 900px) {
   .skill-img img {
@@ -718,7 +836,7 @@ body {
   color: white;
   margin: 2rem 0;
   font-size: 2rem;
-  font-family: "pixel";
+  font-family: 'pixel';
 }
 
 #achievement-wrap {
@@ -884,7 +1002,7 @@ footer #mentions-link {
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: "pixel";
+  font-family: 'pixel';
 }
 #contact-title a {
   color: white;
