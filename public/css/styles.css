@@ -623,8 +623,8 @@ body {
 }
 
 .anim-col1 {
-  -webkit-animation: 15s ease 0.1838822538s light-glow-col infinite alternate;
-  animation: 15s ease 0.1838822538s light-glow-col infinite alternate;
+  -webkit-animation: 15s ease 0.5998956395s light-glow-col infinite alternate;
+  animation: 15s ease 0.5998956395s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -634,8 +634,8 @@ body {
 }
 
 .anim-col2 {
-  -webkit-animation: 17s ease 5.6047163618s light-glow-col infinite alternate;
-  animation: 17s ease 5.6047163618s light-glow-col infinite alternate;
+  -webkit-animation: 17s ease 5.9765763489s light-glow-col infinite alternate;
+  animation: 17s ease 5.9765763489s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -645,8 +645,8 @@ body {
 }
 
 .anim-col3 {
-  -webkit-animation: 20s ease 6.9525761076s light-glow-col infinite alternate;
-  animation: 20s ease 6.9525761076s light-glow-col infinite alternate;
+  -webkit-animation: 20s ease 6.0393477657s light-glow-col infinite alternate;
+  animation: 20s ease 6.0393477657s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -656,8 +656,8 @@ body {
 }
 
 .anim-col4 {
-  -webkit-animation: 19s ease 4.6839944681s light-glow-col infinite alternate;
-  animation: 19s ease 4.6839944681s light-glow-col infinite alternate;
+  -webkit-animation: 19s ease 9.7806467301s light-glow-col infinite alternate;
+  animation: 19s ease 9.7806467301s light-glow-col infinite alternate;
 }
 
 .anim-col5 {
@@ -666,13 +666,13 @@ body {
 }
 
 .anim-col6 {
-  -webkit-animation: 18s ease 8.4601407979s light-glow-col infinite alternate;
-  animation: 18s ease 8.4601407979s light-glow-col infinite alternate;
+  -webkit-animation: 18s ease 2.0560117118s light-glow-col infinite alternate;
+  animation: 18s ease 2.0560117118s light-glow-col infinite alternate;
 }
 
 .anim-col7 {
-  -webkit-animation: 16s ease 4.6418358164s light-glow-col infinite alternate;
-  animation: 16s ease 4.6418358164s light-glow-col infinite alternate;
+  -webkit-animation: 16s ease 9.7409452096s light-glow-col infinite alternate;
+  animation: 16s ease 9.7409452096s light-glow-col infinite alternate;
 }
 
 .anim-col8 {
@@ -687,8 +687,8 @@ body {
 }
 
 .anim-col9 {
-  -webkit-animation: 20s ease 1.4307734517s light-glow-col infinite alternate;
-  animation: 20s ease 1.4307734517s light-glow-col infinite alternate;
+  -webkit-animation: 20s ease 6.7903007545s light-glow-col infinite alternate;
+  animation: 20s ease 6.7903007545s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -698,8 +698,8 @@ body {
 }
 
 .anim-col10 {
-  -webkit-animation: 17s ease 9.069680666s light-glow-col infinite alternate;
-  animation: 17s ease 9.069680666s light-glow-col infinite alternate;
+  -webkit-animation: 17s ease 2.6528620729s light-glow-col infinite alternate;
+  animation: 17s ease 2.6528620729s light-glow-col infinite alternate;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -725,23 +725,23 @@ body {
 }
 
 .anim-lin1 {
-  -webkit-animation: 15s ease 7.3791958187s light-glow-lin infinite alternate;
-  animation: 15s ease 7.3791958187s light-glow-lin infinite alternate;
+  -webkit-animation: 15s ease 9.9321582137s light-glow-lin infinite alternate;
+  animation: 15s ease 9.9321582137s light-glow-lin infinite alternate;
 }
 
 .anim-lin2 {
-  -webkit-animation: 17s ease 9.8109012759s light-glow-lin infinite alternate;
-  animation: 17s ease 9.8109012759s light-glow-lin infinite alternate;
+  -webkit-animation: 17s ease 5.3964527062s light-glow-lin infinite alternate;
+  animation: 17s ease 5.3964527062s light-glow-lin infinite alternate;
 }
 
 .anim-lin3 {
-  -webkit-animation: 20s ease 9.121236683s light-glow-lin infinite alternate;
-  animation: 20s ease 9.121236683s light-glow-lin infinite alternate;
+  -webkit-animation: 20s ease 3.0176668408s light-glow-lin infinite alternate;
+  animation: 20s ease 3.0176668408s light-glow-lin infinite alternate;
 }
 
 .anim-lin4 {
-  -webkit-animation: 19s ease 0.9863336479s light-glow-lin infinite alternate;
-  animation: 19s ease 0.9863336479s light-glow-lin infinite alternate;
+  -webkit-animation: 19s ease 2.3613919507s light-glow-lin infinite alternate;
+  animation: 19s ease 2.3613919507s light-glow-lin infinite alternate;
 }
 
 .anim-lin5 {
@@ -846,50 +846,51 @@ body {
   gap: 3rem;
   width: 80%;
   margin: auto;
+  padding-bottom: 3.5rem;
 }
 
 .project {
-  width: 80%;
-  position: relative;
-}
-.project img {
   width: 100%;
-  border: 10px solid black;
-}
-@media screen and (min-width: 500px) {
-  .project {
-    width: 60%;
-  }
+  position: relative;
 }
 @media screen and (min-width: 725px) {
   .project {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 900px) {
-  .project {
-    width: 35%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1430px) {
   .project {
-    width: 20%;
+    width: 30%;
   }
 }
-
-.project:hover .project-details,
-.project.hover .project-details {
-  opacity: 1;
-  transform: translateY(-100%);
+.project h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.7rem 0;
+  color: white;
+}
+.project img {
+  width: 100%;
+  -webkit-filter: drop-shadow(2px 2px 5px black);
+  filter: drop-shadow(2px 2px 5px black);
+  transition: transform 0.2s ease;
+}
+.project img:hover {
+  -webkit-filter: drop-shadow(2px 2px 15px black);
+  filter: drop-shadow(2px 2px 15px black);
+  transform: scale(1.1);
 }
 
 .project-details {
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: all 0.3s ease;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.808);
   padding: 1rem;
-  border: 10px solid black;
+  -webkit-filter: drop-shadow(2px 2px 15px black);
+  filter: drop-shadow(2px 2px 15px black);
+  border: 4px solid black;
+  border-radius: 10px;
   opacity: 0;
 }
 .project-details h3,
@@ -901,11 +902,33 @@ body {
   font-size: 1.5rem;
 }
 .project-details p {
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 .project-details p span {
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.project:hover .project-details {
+  opacity: 1;
+  transform: translateY(-80%);
+}
+
+.project-buttons a {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.project-buttons a:hover {
+  background-color: black;
+  color: white;
 }
 
 footer {
