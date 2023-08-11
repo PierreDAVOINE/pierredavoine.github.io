@@ -1,9 +1,13 @@
 # pierredavoine.github.io
 
-## Bienvenue cher visiteur sur mon portolio !
+## Bienvenue sur mon portolio !
 
-Je m'appel Pierre, je suis actuellement en formation à l'école [O'Clock](https://oclock.io/) afin d'obtenir un titre professionel développeur web et web mobile, fullstack JavaScript.
+Je m'appelle Pierre, développeur full stack JavaScript.
 
-Ce portfolio est en cours de développement, de nouvelles informations me concernant arriverons très régulièrement ! 
+Ce portfolio a pour but de présenter quelques-unes de mes réalisations.
+
+Les projets présentés sont au moins sur Github mais tous ne sont pas encore hébérgés. Cela ne saurait tarder !
+
+Vous retrouverez le repos github de ce portfolio en cliquant [ici](https://github.com/PierreDAVOINE/pierredavoine.github.io)
 
 En attendant n'hésitez pas à me contacter sur [LinkedIn](https://www.linkedin.com/in/pierredavoine/) si vous avez besoin de plus d'informations !
