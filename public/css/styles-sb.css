@@ -1,8 +1,17 @@
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 @font-face {
-  font-family: "SoDo Sans SemiBold";
-  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot");
-  src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg");
+  font-family: 'SoDo Sans SemiBold';
+  src: url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot');
+  src: url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold')
+      format('svg');
 }
 * {
   margin: 0;
@@ -13,7 +22,7 @@
 body,
 html {
   font-size: 14px;
-  font-family: "SoDo Sans SemiBold", Helvetica, sans-serif;
+  font-family: 'SoDo Sans SemiBold', Helvetica, sans-serif;
 }
 
 a {
@@ -34,9 +43,9 @@ nav,
 }
 @media screen and (max-width: 1084px) {
   nav,
-.nav-left,
-.nav-left ul,
-.nav-right {
+  .nav-left,
+  .nav-left ul,
+  .nav-right {
     flex-wrap: wrap;
   }
 }
@@ -50,7 +59,8 @@ nav,
 nav {
   padding: 0 20px;
   justify-content: space-between;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .nav-left {
@@ -60,6 +70,7 @@ nav {
   text-transform: uppercase;
   font-weight: 600;
   padding: 20px;
+  color: red;
 }
 .nav-left a:hover {
   color: #006341;
@@ -72,6 +83,7 @@ nav {
 .logo-sb img {
   width: 50px;
   height: 50px;
+  margin-top: 1.8rem;
 }
 
 .find-me {
@@ -142,40 +154,40 @@ nav {
 
 .close:first-child {
   -webkit-animation: bar1-close 0.5s;
-          animation: bar1-close 0.5s;
+  animation: bar1-close 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .close:nth-child(2) {
   -webkit-animation: bar2-close 0.5s;
-          animation: bar2-close 0.5s;
+  animation: bar2-close 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .close:nth-child(3) {
   -webkit-animation: bar3-close 0.5s;
-          animation: bar3-close 0.5s;
+  animation: bar3-close 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .active:first-child {
   -webkit-animation: bar1-active 0.5s;
-          animation: bar1-active 0.5s;
+  animation: bar1-active 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .active:nth-child(2) {
   -webkit-animation: bar2-active 0.5s;
-          animation: bar2-active 0.5s;
+  animation: bar2-active 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .active:nth-child(3) {
   -webkit-animation: bar3-active 0.5s;
-          animation: bar3-active 0.5s;
+  animation: bar3-active 0.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes bar1-active {
@@ -344,7 +356,7 @@ nav {
   right: 0;
   bottom: 0;
   width: 80%;
-  height: calc(95vh - 103px);
+  height: calc(100vh - 103px);
   background: white;
   z-index: 2;
 }
@@ -370,14 +382,14 @@ hr {
 
 @media screen and (max-width: 1084px) {
   .mobile-nav,
-.mobile-button {
+  .mobile-button {
     visibility: visible;
   }
 }
 
 @media screen and (max-width: 1084px) {
   .menu,
-.nav-right {
+  .nav-right {
     visibility: hidden;
   }
 }
@@ -412,8 +424,8 @@ main {
 }
 @media screen and (min-width: 720px) {
   .img-rewards,
-.img-rewards img,
-.txt-rewards {
+  .img-rewards img,
+  .txt-rewards {
     width: 50em;
     height: 210px;
   }
@@ -445,8 +457,8 @@ main {
 }
 @media screen and (min-width: 720px) {
   .img,
-.img img,
-.txt {
+  .img img,
+  .txt {
     height: 625px;
     width: 50em;
   }
