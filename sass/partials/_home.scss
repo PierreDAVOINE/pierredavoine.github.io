@@ -105,10 +105,16 @@
   }
 
   img {
-    width: 60%;
+    width: 35%;
     filter: drop-shadow(-10px 5px 20px #000);
     margin-bottom: 1rem;
     animation: 6s ease-in fly infinite alternate;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 25%;
+    }
+
     @media screen and (min-width: 1400px) {
       margin-bottom: 5rem;
     }
@@ -279,7 +285,7 @@
   h1 {
     text-align: center;
     color: white;
-    font-family: "pixel";
+    font-family: 'pixel';
     font-size: 1.1rem;
     line-height: 2rem;
     position: relative;
