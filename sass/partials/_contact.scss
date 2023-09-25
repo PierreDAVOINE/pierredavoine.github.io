@@ -13,11 +13,21 @@
   color: white;
   padding: 2rem;
 
-  @media screen and (min-width: 1000px) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'pixel';
+  }
+
+  .contact-flex {
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+    }
   }
 }
 
@@ -40,13 +50,6 @@
 #contact-title {
   margin-bottom: 2rem;
 
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: "pixel";
-  }
   a {
     color: white;
     text-decoration: underline;
@@ -111,10 +114,4 @@
     align-self: flex-end;
     min-width: 70px;
   }
-}
-
-//! Vérifier marche à suivre pour les labbel de form
-.hidden {
-  //   visibility: hidden;
-  //   display: none;
 }
